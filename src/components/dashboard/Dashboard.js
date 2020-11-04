@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Styled from "styled-components";
 import Header from "../header/Header";
 import Featured from "./Featured";
+import LatestArticles from "./LatestArticles";
 
 const Nav = Styled.div`
     background-color: #ffffff;
@@ -62,27 +63,25 @@ const FirstImg = Styled.img`
 `;
 
 function Dashboard(){
-    return(
-        <Fragment>
-            <Nav>
-                <Header />
-            </Nav>
-            <Subnav>
-                <NavLeft>
-                    <FirstImg src={Image} alt="" />
-                </NavLeft>
-                <NavRight>
-                    <Title>Unleash Your <br />Creativity</Title>
-                    <Content>Johannes is a theme carefully designed and developed to get the most out of the new WordPress editor. Unleash the power of blocks - an awesome new way of creating rich content in WordPress!</Content>
-                    <Content><Anchor href="true">Find out more</Anchor></Content>
-                </NavRight>
-            </Subnav>
-            < Featured />
-      {/* <LatestArticles /> */}
-            
-            
-        </Fragment>
-    );
+  return(
+    <Fragment>
+      <Nav>
+          <Header />
+      </Nav>
+      <Subnav>
+        <NavLeft>
+            <FirstImg src={Image} alt="" />
+        </NavLeft>
+        <NavRight>
+          <Title>Unleash Your <br />Creativity</Title>
+          <Content>Johannes is a theme carefully designed and developed to get the most out of the new WordPress editor. Unleash the power of blocks - an awesome new way of creating rich content in WordPress!</Content>
+          <Content><Anchor href="true">Find out more</Anchor></Content>
+        </NavRight>
+      </Subnav>
+      < Featured />
+      <LatestArticles />                      
+    </Fragment>
+  );
 };
 
 export default Dashboard;
