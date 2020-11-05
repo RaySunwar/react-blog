@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
 // import Footer from "./../footers/Footer";
-// import Image0 from "./../image/brooke-cagle.jpg";
-// import Image3 from "./../image/image3.jpg";
-// import Image4 from "./../image/image4.jpg"; 
-// import Image5 from "./../image/image5.jpg"; 
-// import Image6 from "./../image/image6.jpg"; 
+import Image1 from "./../images/image1.jpg";
+// import Image from "./../images/image.jpg";
+import Image3 from "./../images/image3.jpg"; 
+import Image4 from "./../images/image4.jpg"; 
+import Image5 from "./../images/image5.jpg"; 
+import Image6 from "./../images/image6.jpg"; 
 import { FaFacebook, FaPinterest } from "react-icons/fa";
 import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 
@@ -171,7 +172,7 @@ function LatestArticles(){
           <SubLeft>
             <Nav>
               <Nav>
-                {/* <Picture src={Image0} alt="" /> */}
+                <Picture src={Image1} alt="" />
               </Nav>
               <Nav>
                 <AnchorM>Motivation</AnchorM>
@@ -187,7 +188,7 @@ function LatestArticles(){
             </Nav>
             <Nav>
               <Nav>
-                {/* <Picture src={Image1} alt="" /> */}
+                {/* <Picture src={Image2} alt="" /> */}
               </Nav>
               <Nav>
                 <AnchorM>Lifestyle</AnchorM>
@@ -202,7 +203,7 @@ function LatestArticles(){
               </Nav>
             </Nav>
               <Nav>
-                {/* <Picture src={Image3} alt="" />  */}
+                <Picture src={Image3} alt="" /> 
               </Nav>
               <Nav>
                 <AnchorM>Lifestyle</AnchorM>
@@ -216,7 +217,7 @@ function LatestArticles(){
                 <Link>Objectively disseminate parallel communities whereas premier e-business. Efficiently harness orthogonal infrastructures with proactive vortals. Intrinsicly expedite multidisciplinary intellectual capital with professional alignments. Compellingly...</Link>
               </Nav>
               <Nav>
-                {/* <Picture src={Image4} alt="" /> */}
+                <Picture src={Image4} alt="" />
               </Nav>
               <Nav>
                 <AnchorM>Lifestyle</AnchorM>
@@ -230,7 +231,7 @@ function LatestArticles(){
                 <Link>Seamlessly maximize B2B growth strategies with state of the art e-services. Efficiently streamline frictionless collaboration and idea-sharing whereas next-generation potentialities. Proactively create team driven scenarios with client-focused...</Link>
               </Nav>
               <Nav>
-                {/* <Picture src={Image5} alt="" /> */}
+                <Picture src={Image5} alt="" />
               </Nav>
               <Nav>
                 <AnchorM>Motivation</AnchorM>
@@ -244,8 +245,8 @@ function LatestArticles(){
                 <Link>Proactively administrate team building supply chains before virtual convergence. Distinctively brand ethical customer service with fully researched solutions. Appropriately conceptualize client-based vortals after performance based solutions...</Link>
               </Nav>
               <Nav>
-                {/* <Picture src={Image6} alt="" /> */}
-              </Nav>
+                <Picture src={Image6} alt="" />
+              </Nav>      
               <Nav>
                 <AnchorM>Fashion</AnchorM>
               </Nav>

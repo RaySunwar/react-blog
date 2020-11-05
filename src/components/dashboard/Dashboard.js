@@ -3,6 +3,7 @@ import Styled from "styled-components";
 import Header from "../header/Header";
 import Featured from "./Featured";
 import LatestArticles from "./LatestArticles";
+import Image0 from "./../images/image0.jpg";
 
 const Nav = Styled.div`
     background-color: #ffffff;
@@ -13,7 +14,7 @@ const Nav = Styled.div`
 
 const Subnav = Styled.div`
     display: flex;
-    font-family: "";
+    font-family: "Mulish", sans-serif;
 `;
 
 const NavLeft = Styled.div`
@@ -70,7 +71,7 @@ function Dashboard(){
       </Nav>
       <Subnav>
         <NavLeft>
-            <FirstImg src={Image} alt="" />
+            <FirstImg src={Image0} alt="" />
         </NavLeft>
         <NavRight>
           <Title>Unleash Your <br />Creativity</Title>
