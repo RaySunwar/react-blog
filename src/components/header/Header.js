@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 import Styled from "styled-components";
 
 const Nav = Styled.div`
-    background-color: #ffffff;
+  background-color: #ffffff;
+  font-family: "Mulish", sans-serif;
 `;
 
 const NavHeader = Styled.div`
@@ -22,7 +23,6 @@ const NavLeft = Styled.div`
 
 const Title = Styled.h1`
   color: #f13b3b;
-  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
   &:hover {
@@ -45,8 +45,7 @@ const UnOrderList = Styled.ul`
 
 const ListItem = Styled.li`
   display: inline-block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
   justify-content: "space-between";
   position: relative;
@@ -84,7 +83,6 @@ const Arrow = Styled.i`
 
 const Anchor = Styled.a`
   margin: 0 0 0 4px;
-  /* width: 11px; */
   &:hover {
     display: block;
   }
@@ -105,8 +103,8 @@ const UnorderHamburger = Styled.ul`
 
 const ListHamburger = Styled.li`
   display: inline-block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
   font-size: 1rem;
   justify-content: "space-between";
   position: relative;
