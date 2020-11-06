@@ -11,7 +11,7 @@ import Footer from "./../footer/footer";
 
 const Nav = Styled.div`
   background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
 `;
 
 const Subnav = Styled.div`
@@ -161,7 +161,7 @@ const SocialWrapper = Styled.div`
 `;
 
 function LatestArticles(){
-  return (
+  return(
     <Fragment>
       <Nav>
         <Nav>
