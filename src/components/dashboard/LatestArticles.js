@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
 import Image1 from "./../images/image1.jpg";
-// import Image from "./../images/image.jpg";
 import Image3 from "./../images/image3.jpg"; 
 import Image4 from "./../images/image4.jpg"; 
 import Image5 from "./../images/image5.jpg"; 
@@ -162,7 +161,7 @@ const SocialWrapper = Styled.div`
 `;
 
 function LatestArticles(){
-  return(
+  return (
     <Fragment>
       <Nav>
         <Nav>
