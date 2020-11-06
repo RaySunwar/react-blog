@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
-// import Footer from "./../footers/Footer";
 import Image1 from "./../images/image1.jpg";
 // import Image from "./../images/image.jpg";
 import Image3 from "./../images/image3.jpg"; 
@@ -9,6 +8,7 @@ import Image5 from "./../images/image5.jpg";
 import Image6 from "./../images/image6.jpg"; 
 import { FaFacebook, FaPinterest } from "react-icons/fa";
 import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
+import Footer from "./../footer/footer";
 
 const Nav = Styled.div`
   background-color: #ffffff;
@@ -304,7 +304,7 @@ function LatestArticles(){
           <Title>Social Media Follow</Title>
         </SocialWrapper>
       </Nav>
-      {/* <Footer/> */}
+      <Footer/>
     </Fragment>
   );
 };
