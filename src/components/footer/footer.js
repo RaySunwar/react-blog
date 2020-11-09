@@ -32,7 +32,7 @@ const Listitem = Styled.li`
   position: relative;
 `;
 
-const Link = Styled.p`
+const Link = Styled.div`
   text-align: left;
 `;
 
