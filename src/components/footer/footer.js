@@ -39,6 +39,9 @@ const Link = Styled.p`
 const Anchor = Styled.a`
   color: #424851;
   text-align: center;
+  &:hover {
+    color: #f13b3b;
+  }
 `;
 
 
