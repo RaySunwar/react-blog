@@ -3,7 +3,7 @@ import Styled from "styled-components";
 
 const Nav = Styled.div`
   background-color: #ffffff;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish", Arial, sans-serif;
 `;
 
 const NavHeader = Styled.div`
@@ -44,29 +44,36 @@ const UnOrderList = Styled.ul`
 `;
 
 const ListItem = Styled.li`
+  color: #424851;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
-  justify-content: "space-between";
   position: relative;
   padding-right: 1rem;
   &:hover {
     color: #f13b3b;
+
+    > ul {
+      display: block;
+    }
   }
 `;
 
 const SubunorderList = Styled.ul`
-  padding-left: 0;
-  list-style-type: none;
-  width: 150px;
-  &:hover Sublistitem {
-    display: block;
-  }
+  background: #ffffff;
+  display: none;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  padding: 25px 0 250x 0;
+  width: 220px;
+  z-index: 9;
+  top: 50px;
+  left: -30px;
 `;
 
 const Sublistitem = Styled.li`
-  display: none;
-  position: absolute;
+  position: relative;
 `;
 
 const Arrow = Styled.i`
@@ -78,19 +85,31 @@ const Arrow = Styled.i`
   padding: 2px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  &:hover {
+    color: solid red;
+  }
 `;
 
 const Anchor = Styled.a`
+  height: 50px;
+  display: flex;
   margin: 0 0 0 4px;
+  align-item: center;
+  background: transparent;
+  -webkit-box-align: center;
+  text-decoration: none;
+
   &:hover {
     display: block;
   }
 `;
 
 const Subanchor = Styled.a`
-  display: block;
+  color: #424851;
+  display: block; 
+  padding: 0 30px 15px 30px;
   &:hover {
-    background-color: green;
+  background-color: #f13b3b;
   }
 `;
 
@@ -125,28 +144,64 @@ function Header(){
             <UnOrderList>
               <ListItem>
                 <Anchor>Home<Arrow /></Anchor>
+                <SubunorderList>
+                  <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 3</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 4</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 5</Subanchor></Sublistitem>
+                </SubunorderList>
               </ListItem>
               <ListItem>
                 <Anchor>Layouts<Arrow /></Anchor>
                 <SubunorderList>
-                  <Sublistitem>
-                    <Subanchor>A</Subanchor>
-                    <Subanchor>B</Subanchor>
-                    <Subanchor>C</Subanchor>
-                  </Sublistitem>
+                  <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 3</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 4</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 5</Subanchor></Sublistitem>
                 </SubunorderList>
+
               </ListItem>
               <ListItem>
                 <Anchor>Archives<Arrow /></Anchor>
+                <SubunorderList>
+                  <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 3</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 4</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 5</Subanchor></Sublistitem>
+                </SubunorderList>
               </ListItem>
               <ListItem>
                 <Anchor>Posts<Arrow /></Anchor>
+                <SubunorderList>
+                  <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 3</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 4</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 5</Subanchor></Sublistitem>
+                </SubunorderList>
               </ListItem>
               <ListItem>
                 <Anchor>Pages<Arrow /></Anchor>
+                <SubunorderList>
+                  <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 3</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 4</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 5</Subanchor></Sublistitem>
+                </SubunorderList>
               </ListItem>
               <ListItem>
                 <Anchor>Features<Arrow /></Anchor>
+                <SubunorderList>
+                  <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 3</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 4</Subanchor></Sublistitem>
+                  <Sublistitem><Subanchor>Example 5</Subanchor></Sublistitem>
+                </SubunorderList>
               </ListItem>
             </UnOrderList>
             <UnorderHamburger>
