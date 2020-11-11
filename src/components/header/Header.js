@@ -91,6 +91,7 @@ const Arrow = Styled.i`
 `;
 
 const Anchor = Styled.a`
+  color: #424851;
   height: 50px;
   display: flex;
   margin: 0 0 0 4px;
