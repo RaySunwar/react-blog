@@ -11,10 +11,20 @@ const Nav = Styled.div`
 `;
 
 const Title = Styled.h1`
-  font-family: "Poppins", sans-serif;
+  color: #424851;
+  font-family: "Mulish", "Arial", sans-serif;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding-top: 3rem;
+  text-align: center;
+`;
+
+const Subtitle = Styled.h1`
+  color: #424851;
+  font-family: "Mulish", "Arial", sans-serif;
+  font-weight: 7;
+  font-size: 2rem;
+  padding-top: 1rem;
   text-align: center;
 `;
 
@@ -24,7 +34,9 @@ function Featured(){
             <Wrapper>
                 <Title>Featured articles</Title>
             </Wrapper>
-            <Nav>Fetch Data will be render here</Nav>
+            <Nav>
+                <Subtitle>Fetch Data will be render here</Subtitle>
+            </Nav>
         </Fragment>
     );
 };
