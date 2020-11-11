@@ -21,7 +21,7 @@ const NavLeft = Styled.div`
     margin-left: 2.5rem;
     margin-right: 1.5rem;
     text-align: left;
-    width:50%;
+    width: 50%;
 `;
 
 const NavRight = Styled.div`
@@ -32,15 +32,27 @@ const NavRight = Styled.div`
 `;
 
 const Title = Styled.h1`
+  color: #424851;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 4.2rem;
   margin-left: 0;
   padding-top: 3rem;
   text-align: left;
+  box-sizing: inherit;
 `;
 
 const Content = Styled.p`
+  box-sizing: inherit;
+  color: #424851;
+  font-size: 1.2rem;
   font-weight: 400;
+  margin-top: 0;
+`;
+
+const Button = Styled.p`
+  box-sizing: inherit;
+  font-size: 1rem;
+  margin-top: 0;
 `;
 
 const Anchor = Styled.a`
@@ -49,8 +61,8 @@ const Anchor = Styled.a`
   box-shadow: 0 10px 15px 0 rgba(241,59,59,0.2);
   color: #ffffff;
   display: inline-block;  
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: bold;
   float: none;
   position: static;
   text-decoration: none;
@@ -76,7 +88,7 @@ function Dashboard(){
         <NavRight>
           <Title>Unleash Your <br />Creativity</Title>
           <Content>Johannes is a theme carefully designed and developed to get the most out of the new WordPress editor. Unleash the power of blocks - an awesome new way of creating rich content in WordPress!</Content>
-          <Content><Anchor href="true">Find out more</Anchor></Content>
+          <Button><Anchor href="true">Find out more</Anchor></Button>
         </NavRight>
       </Subnav>
       < Featured />
