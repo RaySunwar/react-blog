@@ -122,13 +122,12 @@ const UnorderHamburger = Styled.ul`
 const ListHamburger = Styled.li`
   display: inline-block;
   font-family: "Mulish", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
-  justify-content: "space-between";
   position: relative;
   padding-right: 1.5rem;
   &:hover {
-    color: red;
+    color: #f13b3b;
   }
 `;
 
