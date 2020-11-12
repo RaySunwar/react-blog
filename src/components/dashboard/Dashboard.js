@@ -13,8 +13,8 @@ const Nav = Styled.div`
 `;
 
 const Subnav = Styled.div`
-    display: flex;
-    font-family: "Mulish", sans-serif;
+  display: flex;
+  font-family: "Mulish", sans-serif;
 `;
 
 const NavLeft = Styled.div`
