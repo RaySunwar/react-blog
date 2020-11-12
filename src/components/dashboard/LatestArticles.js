@@ -67,7 +67,7 @@ const TitleI = Styled.h2`
 const Author = Styled.p`
   color: #424851;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 900;
   margin: 0 0 0 4rem;
 `;
 
