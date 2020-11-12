@@ -81,10 +81,10 @@ const Article = Styled.p`
 `;
 
 const Span = Styled.span`
-  margin: 0;
-  padding: 0;
   color: #f13b3b;
   font weigth: 700;
+  margin: 0;
+  padding: 0;
 `;
 
 const Anchor = Styled.a`
@@ -102,9 +102,6 @@ const Anchor = Styled.a`
   padding: 5px 20px 5px 20px;
 `;
 
-const AnchorI = Styled.a`
-
-`;
 const Picture = Styled.img`
   height: 491px;
   width: 735px;
