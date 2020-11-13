@@ -1,5 +1,8 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
+import  { IconContext } from "react-icons";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RiArrowDropDownLine} from "react-icons/ri";
 
 const Nav = Styled.div`
   background-color: #ffffff;
@@ -26,7 +29,7 @@ const Title = Styled.h1`
   font-size: 2.5rem;
   font-weight: 900;
   &:hover {
-    color: black;
+  color: #424851;
   }
 `;
 
@@ -52,7 +55,6 @@ const ListItem = Styled.li`
   padding-right: 1rem;
   &:hover {
     color: #f13b3b;
-
     > ul {
       display: block;
     }
@@ -65,7 +67,7 @@ const SubunorderList = Styled.ul`
   margin: 0;
   list-style: none;
   position: absolute;
-  padding: 25px 0 250x 0;
+  padding: 25px 0 25px 0;
   width: 220px;
   z-index: 9;
   top: 50px;
@@ -79,6 +81,7 @@ const Sublistitem = Styled.li`
 const Arrow = Styled.i`
   border: solid black;
   border-width: 0 2px 2px 0;
+  color: #424851;
   display: inline-block;
   height: 1px;
   margin: 7px 0 0 5px;
@@ -86,12 +89,11 @@ const Arrow = Styled.i`
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   &:hover {
-    color: solid red;
+    color: #f13b3b;
   }
 `;
 
 const Anchor = Styled.a`
-  color: #424851;
   height: 50px;
   display: flex;
   margin: 0 0 0 4px;
@@ -99,8 +101,8 @@ const Anchor = Styled.a`
   background: transparent;
   -webkit-box-align: center;
   text-decoration: none;
-
-  &:hover {
+  &:hover :: before {
+    color: #424851;
     display: block;
   }
 `;
@@ -108,9 +110,9 @@ const Anchor = Styled.a`
 const Subanchor = Styled.a`
   color: #424851;
   display: block; 
-  padding: 0 30px 15px 30px;
+  padding: 5px 20px;
   &:hover {
-  background-color: #f13b3b;
+    color: #f13b3b;
   }
 `;
 
@@ -121,6 +123,7 @@ const UnorderHamburger = Styled.ul`
 `;
 
 const ListHamburger = Styled.li`
+  color: #424851;
   display: inline-block;
   font-family: "Mulish", sans-serif;
   font-weight: 700;
@@ -143,7 +146,16 @@ function Header(){
           <NavRight>
             <UnOrderList>
               <ListItem>
-                <Anchor>Home<Arrow /></Anchor>
+                <Anchor>Home
+                  <IconContext.Provider
+                    value={{
+                      size: "1.5em",
+                      style: { padding: "2px" },
+                    }} 
+                  >
+                    <RiArrowDropDownLine />
+                  </IconContext.Provider>
+                </Anchor>
                 <SubunorderList>
                   <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
                   <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
@@ -153,7 +165,16 @@ function Header(){
                 </SubunorderList>
               </ListItem>
               <ListItem>
-                <Anchor>Layouts<Arrow /></Anchor>
+                <Anchor>Layouts
+                  <IconContext.Provider
+                    value={{
+                      size: "1.5em",
+                      style: { padding: "2px" },
+                    }} 
+                  >
+                    <RiArrowDropDownLine />
+                  </IconContext.Provider>
+                </Anchor>
                 <SubunorderList>
                   <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
                   <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
@@ -164,7 +185,16 @@ function Header(){
 
               </ListItem>
               <ListItem>
-                <Anchor>Archives<Arrow /></Anchor>
+                <Anchor>Archives
+                  <IconContext.Provider
+                    value={{
+                      size: "1.5em",
+                      style: { padding: "2px" },
+                    }} 
+                  >
+                    <RiArrowDropDownLine />
+                  </IconContext.Provider>
+                </Anchor>
                 <SubunorderList>
                   <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
                   <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
@@ -174,7 +204,16 @@ function Header(){
                 </SubunorderList>
               </ListItem>
               <ListItem>
-                <Anchor>Posts<Arrow /></Anchor>
+                <Anchor>Posts
+                  <IconContext.Provider
+                      value={{
+                        size: "1.5em",
+                        style: { padding: "2px" },
+                      }} 
+                    >
+                      <RiArrowDropDownLine />
+                  </IconContext.Provider>
+                </Anchor>
                 <SubunorderList>
                   <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
                   <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
@@ -184,7 +223,16 @@ function Header(){
                 </SubunorderList>
               </ListItem>
               <ListItem>
-                <Anchor>Pages<Arrow /></Anchor>
+                <Anchor>Pages
+                  <IconContext.Provider
+                  value={{
+                      size: "1.5em",
+                      style: { padding: "2px" },
+                    }} 
+                  >
+                    <RiArrowDropDownLine />
+                  </IconContext.Provider>
+                </Anchor>
                 <SubunorderList>
                   <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
                   <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
@@ -194,7 +242,16 @@ function Header(){
                 </SubunorderList>
               </ListItem>
               <ListItem>
-                <Anchor>Features<Arrow /></Anchor>
+                <Anchor>Features
+                  <IconContext.Provider
+                    value={{
+                      size: "1.5em",
+                      style: { padding: "2px" },
+                    }} 
+                  >
+                    <RiArrowDropDownLine />
+                  </IconContext.Provider>
+                </Anchor>
                 <SubunorderList>
                   <Sublistitem><Subanchor>Example 1</Subanchor></Sublistitem>
                   <Sublistitem><Subanchor>Example 2</Subanchor></Sublistitem>
@@ -206,7 +263,16 @@ function Header(){
             </UnOrderList>
             <UnorderHamburger>
               <ListHamburger>
-                <Anchor>Menu</Anchor>
+                <Anchor>Menu 
+                  <IconContext.Provider
+                    value={{
+                      size: "1.1em",
+                      style: { padding: "3px" },
+                    }} 
+                    >
+                      <GiHamburgerMenu />
+                  </IconContext.Provider>
+                </Anchor>
               </ListHamburger>
             </UnorderHamburger>
           </NavRight>
