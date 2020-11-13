@@ -31,20 +31,11 @@ const Sectionleft = Styled.div`
   width: 65%;
 `;
 
-const SectionRight = Styled.div`
-  display: block;
-  margin: 0 5rem 0 2.5rem;
-  width:45%;
-`;
-
 const Section = Styled.section`
   margin: 0;
   padding: 0;
 `;
 
-const SubnavRight = Styled.div`
-  margin: 0 0 2rem 0;
-`;
 const Title = Styled.h1`
   color: #424851;
   font-family: "Mulish", "Arial", sans-serif;
@@ -59,9 +50,22 @@ const TitleI = Styled.h2`
   font-size: 3rem;
   font-weight: 900;
   margin-left: 4rem;
-  &:hover {
-    color: #f13b3b;
-  }
+`;
+
+const TitleII = Styled.h3`
+  color: #424851;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-left: 1.5rem;
+`;
+
+const Titleii = Styled.h3`
+  color: #ffffff;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-left: 1.5rem;
 `;
 
 const Author = Styled.p`
@@ -73,11 +77,30 @@ const Author = Styled.p`
 
 const Article = Styled.p`
   color: #424851;
+  font-family: "Mulish", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   margin-top: 24px;
   margin-left: 4rem;
   padding-bottom: 3rem;
+`;
+
+const ArticleI = Styled.p`
+  color: #424851;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 300px;
+  margin-left: 1.5rem;
+`;
+
+const Articlei = Styled.p`
+  color: #ffffff;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 300px;
+  margin-left: 1.5rem;
 `;
 
 const Span = Styled.span`
@@ -94,12 +117,40 @@ const Anchor = Styled.a`
   color: #ffffff;
   display: inline-block;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 900;
   float: none;
   margin-left: 4rem;
   position: static;
   text-decoration: none;
   padding: 5px 20px 5px 20px;
+`;
+
+const AnchorI = Styled.a`
+  float: left:
+  margin-right: 5px;
+  margin-botton: 5px;
+  border: none !important;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: medium;
+    border-right-color: currentcolor;
+    border-right-style: none;
+    border-right-width: medium;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: normal;
 `;
 
 const Picture = Styled.img`
@@ -111,12 +162,25 @@ const Picture = Styled.img`
 
 const Navnewsletter = Styled.div`
   background-color: #E0E0E0;
-  padding: 1rem;
+  padding: 2.5rem;
+  max-width: 400px;
 `;
 
 const NavTopics = Styled.div`
   background-color: #E0E0E0;
+  max-width: 400px;
   padding: 1rem;
+
+`;
+
+const SectionRight = Styled.div`
+  display: block;
+  margin: 0 5rem 0 2.5rem;
+  width:45%;
+`;
+
+const SubnavRight = Styled.div`
+  margin: 0 0 2rem 0;
 `;
 
 const NavSocial = Styled.div`
@@ -125,31 +189,52 @@ const NavSocial = Styled.div`
   padding: 1rem;
 `;
 
-const ArticleSocial = Styled.p`
-  color: #ffffff;
-`;
-
 const Form = Styled.form`
+  color: #424851;
   display: block;
+  font-family: "Mulish", sans-serif;
+  padding: 1rem;
 `;
 
 const NavForm = Styled.div`
-  display: block;
 `;
 
 const Input = Styled.input`
-  border-bottom: 1px solid rgba(66, 72, 81, 0.2);
-  border-radius: 0;
-  margin-bottom: 12px;
+  border: 1px solid rgba(66, 72, 81, 0.2);
+  background: 0;
   border-top: 0;      
   border-right: 0;      
   border-left: 0; 
   text-align: left;
   padding: 15px 0;
+  outline: none;
+  inline: none;
+  width: 100%;
   height: auto;
   color: inherit;
   font: inherit;
-  display: inline-block;    
+  display: inline-block;  
+  vertical-align: baseline;
+  webkit-backface-visibility: hidden;  
+`;
+
+const Suscribe = Styled.section`
+  padding-left: 1rem;
+  padding-right: 1rem;
+`;
+
+const InputI = Styled.input`
+  color: #ffffff;
+  background: #f13b3b;
+  border: none;
+  lineheight: 1.3;
+  margin: 0;
+  padding: 10px;
+  font-family: "Mulish", sans-serif;
+  font-height: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
 `;
 
 const Unorder = Styled.ul`
@@ -158,43 +243,41 @@ const Unorder = Styled.ul`
 `;
 
 const List = Styled.li`
+  font-family: "Mulish", sans-serif;
 `;
 
-const Unordermw = Styled.ul`
+const Unordersocial = Styled.ul`
   display: flex;
   list-style-type: none;
 `;
 
-const Listmw = Styled.li`
-    margin: 0 5px;
-
-`;
-
-const SocialList = Styled.div`
+const Listitemsocial = Styled.li`
+  margin: 0 5px;
 `;
 
 const StyledFacebook = Styled(FaFacebook)`
-  background: #ffffff;
   color: #3e5b98;
-`;
-
-const StyledTwitter = Styled(AiFillTwitterCircle)`
-  background: #ffffff;
-  color: #4da7de;
-`;
-
-const StyledPinterest = Styled(FaPinterest)`
-  background: #ffffff;
-  color: #c92619;
-`;
-
-const StyledInstagram = Styled(AiFillInstagram)`
-  background: #ffffff;
-  color: #000000;
+  // width: 50px;
+  // height: 50ps;
+  // font-size: 16px;
+  // line-height: 55px;
+  // border-radius: 50%;
 `;
 
 const SocialWrapper = Styled.div`
   background-color: #E0E0E0;
+`;
+
+const StyledTwitter = Styled(AiFillTwitterCircle)`
+  color: #4da7de;
+`;
+
+const StyledPinterest = Styled(FaPinterest)`
+  color: #c92619;
+`;
+
+const StyledInstagram = Styled(AiFillInstagram)`
+  color: #000000;
 `;
 
 function LatestArticles(){
@@ -312,16 +395,21 @@ function LatestArticles(){
           <SectionRight>
             <SubnavRight>
               <Navnewsletter>
-                <Article>Newsletter</Article>
-                <Article>Make sure to subscribe to our newsletter and be the first to know the news.</Article>
+                <TitleII>Newsletter</TitleII>
+                <ArticleI>Make sure to subscribe to our newsletter and be the first to know the news.</ArticleI>
                 <Form>
-                  <NavForm><Input type="email" id="email" placeholder="Your email address" /></NavForm>
+                  <NavForm>
+                    <Input type="email" id="email" placeholder="Your email address" />
+                  </NavForm>
                 </Form>
+                <Suscribe>
+                  <InputI className="button" type="submit" value="Suscribe" name="suscribe"></InputI>
+                </Suscribe>
               </Navnewsletter>
             </SubnavRight>
             <SubnavRight>
               <NavTopics>
-                <Article>Topics</Article>
+                <TitleII>Topics</TitleII>
                 <Unorder>
                   <List>Art</List>                  
                   <List>Fashion</List>                  
@@ -334,16 +422,16 @@ function LatestArticles(){
             </SubnavRight>
             <SubnavRight>
               <NavSocial>
-                <Article>Let's get social</Article>
-                <ArticleSocial>We are a team of dedicated professionals delivering high quality WordPress themes and plugins.</ArticleSocial>
-                <SocialList>
-                  <Unordermw>
-                    <Listmw><Anchor href="" ><StyledFacebook /></Anchor></Listmw>                  
-                    <Listmw><Anchor href=""><StyledTwitter /></Anchor></Listmw>                  
-                    <Listmw><Anchor href=""><StyledPinterest /></Anchor></Listmw>                  
-                    <Listmw><Anchor href=""><StyledInstagram /></Anchor></Listmw>
-                  </Unordermw>
-                </SocialList>
+                <Titleii>Let's get social</Titleii>
+                <Articlei>We are a team of dedicated professionals delivering high quality WordPress themes and plugins.</Articlei>
+                <Section>
+                  <Unordersocial>
+                    <Listitemsocial><AnchorI href="" ><StyledFacebook /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><StyledTwitter /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><StyledPinterest /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><StyledInstagram /></AnchorI></Listitemsocial>
+                  </Unordersocial>
+                </Section>
               </NavSocial>
             </SubnavRight>
           </SectionRight>
