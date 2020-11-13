@@ -27,6 +27,13 @@ const Unorderlist = Styled.ul`
   list-style: none;
 `;
 
+const Ulisticon = Styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+`;
+
 const Listitem = Styled.li`
   margin: 12px 0;
   position: relative;
@@ -44,6 +51,13 @@ const Anchor = Styled.a`
   }
 `;
 
+const AnchorI = Styled.a`
+  color: #424851;
+  text-align: center;
+  margin-right: 5px;
+  margin-botton: 5px;
+`;
+
 
 const Footernav = Styled.div`
   margin-top: 3rem;
@@ -55,6 +69,18 @@ const Footerlink = Styled.p`
   text-align: center;
 `;
 
+const StyledFacebook = Styled(SiFacebook)`
+  color: #3e5b98;  
+`;
+
+const StyledTwitter = Styled(SiTwitter)`
+  color: #4da7de;  
+`;
+
+const StyledPinterest = Styled(SiPinterest)`
+  color: #c92619;
+`;
+
 const footer = () => {
   return(
     <Nav>
@@ -62,13 +88,11 @@ const footer = () => {
         <Section>
           <Title>React Blog</Title>
           <Link><Anchor>A multi-concept personal blog and <br /> magazine WordPress theme</Anchor>
-            <Unorderlist>
-              <Listitem>
-                <SiFacebook />
-                <SiTwitter />
-                <SiPinterest />
-              </Listitem>
-            </Unorderlist>
+            <Ulisticon>
+              <Listitem><AnchorI><StyledFacebook /></AnchorI></Listitem>
+              <Listitem><AnchorI><StyledTwitter /></AnchorI></Listitem>
+              <Listitem><AnchorI><StyledPinterest /></AnchorI></Listitem>
+            </Ulisticon>
           </Link>
         </Section>
         <Section>
