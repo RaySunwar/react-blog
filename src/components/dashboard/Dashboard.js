@@ -6,10 +6,10 @@ import LatestArticles from "./LatestArticles";
 import Image0 from "./../images/image0.jpg";
 
 const Nav = Styled.div`
-    background-color: #ffffff;
-    margin: 15px;
-    padding: 0;
-    max-width: 100%;
+  background-color: #ffffff;
+  margin: 15px;
+  padding: 0;
+  max-width: 100%;
 `;
 
 const Subnav = Styled.div`
@@ -18,10 +18,10 @@ const Subnav = Styled.div`
 `;
 
 const NavLeft = Styled.div`
-    margin-left: 2.5rem;
-    margin-right: 1.5rem;
-    text-align: left;
-    width: 50%;
+  margin-left: 2.5rem;
+  margin-right: 1.5rem;
+  text-align: left;
+  width: 50%;
 `;
 
 const NavRight = Styled.div`
@@ -79,11 +79,11 @@ function Dashboard(){
   return(
     <Fragment>
       <Nav>
-          <Header />
+        <Header />
       </Nav>
       <Subnav>
         <NavLeft>
-            <FirstImg src={Image0} alt="" />
+          <FirstImg src={Image0} alt="" />
         </NavLeft>
         <NavRight>
           <Title>Unleash Your <br />Creativity</Title>

@@ -78,21 +78,6 @@ const Sublistitem = Styled.li`
   position: relative;
 `;
 
-const Arrow = Styled.i`
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  color: #424851;
-  display: inline-block;
-  height: 1px;
-  margin: 7px 0 0 5px;
-  padding: 2px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  &:hover {
-    color: #f13b3b;
-  }
-`;
-
 const Anchor = Styled.a`
   height: 50px;
   display: flex;
