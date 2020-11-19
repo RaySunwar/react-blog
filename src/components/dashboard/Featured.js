@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import Styled from "styled-components";
 
 const Wrapper = Styled.div`
-    background-color: #ffffff;
     width: 100%;
 `;
 
