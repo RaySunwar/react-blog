@@ -63,6 +63,7 @@ const ListItem = Styled.li`
 
 const SubunorderList = Styled.ul`
   background: #ffffff;
+  box-shadow: 0 15px 40px 0 rgba(0,0,0,.2);
   display: none;
   margin: 0;
   list-style: none;
