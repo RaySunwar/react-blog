@@ -22,6 +22,24 @@ const NavLeft = Styled.div`
   margin-right: 1.5rem;
   text-align: left;
   width: 50%;
+  &::after {
+    transform: scale(1.25);
+    left: 25%;
+    bottom: -120px;
+    border-top-left-radius: 63% 70%;
+    border-top-right-radius: 37% 68%;
+    border-bottom-right-radius: 50% 32%;
+    border-bottom-left-radius: 50% 30%;
+
+    background: rgba(66,72,81,0.1);
+    background-color: #f2f3f3;
+    display: block; 
+    position: absolute;
+    height: 540px;
+    width: 540px;
+    content: "";
+    z-index: -1;
+  };
 `;
 
 const NavRight = Styled.div`
@@ -71,11 +89,17 @@ const Anchor = Styled.a`
 `;
 
 const FirstImg = Styled.img`
+  border: 0;
+  object-fit: cover;
+  border-top-left-radius: 63% 70%;
+  border-top-right-radius: 37% 68%;
+  border-bottom-right-radius: 50% 32%;
+  border-bottom-left-radius: 50% 30%;
   height: 540px;
-  width: 100%;
+  width: 540px; 
 `;
 
-function Dashboard(){
+function Dashboard() {
   return(
     <Fragment>
       <Nav>
@@ -83,7 +107,7 @@ function Dashboard(){
       </Nav>
       <Subnav>
         <NavLeft>
-          <FirstImg src={Image0} alt="" />
+          <FirstImg src={Image0} alt="" /> 
         </NavLeft>
         <NavRight>
           <Title>Unleash Your <br />Creativity</Title>
