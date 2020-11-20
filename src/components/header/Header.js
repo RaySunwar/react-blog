@@ -7,6 +7,8 @@ import { RiArrowDropDownLine} from "react-icons/ri";
 const Nav = Styled.div`
   background-color: #ffffff;
   font-family: "Mulish", Arial, sans-serif;
+  max-width: 1200px;
+  width: 100%;
 `;
 
 const NavHeader = Styled.div`
@@ -24,6 +26,14 @@ const NavLeft = Styled.div`
   width: 40%;
 `;
 
+
+const NavRight = Styled.div`
+  display: flex;
+  margin: 1rem;
+  text-align: left;
+  width: 60%;
+`;
+
 const Title = Styled.h1`
   color: #f13b3b;
   font-size: 2.5rem;
@@ -31,13 +41,6 @@ const Title = Styled.h1`
   &:hover {
   color: #424851;
   }
-`;
-
-const NavRight = Styled.div`
-  display: flex;
-  margin: 1rem;
-  text-align: left;
-  width: 60%;
 `;
 
 const UnOrderList = Styled.ul`
@@ -83,7 +86,7 @@ const Anchor = Styled.a`
   height: 50px;
   display: flex;
   margin: 0 0 0 4px;
-  align-item: center;
+  align-items: center;
   background: transparent;
   -webkit-box-align: center;
   text-decoration: none;
