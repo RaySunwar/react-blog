@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Styled from "styled-components";
+import styled from "styled-components";
 import Image1 from "./../images/image1.jpg";
 import Image2 from "./../images/image2.jpg";
 import Image3 from "./../images/image3.jpg"; 
@@ -10,33 +10,33 @@ import { FaFacebook, FaPinterest } from "react-icons/fa";
 import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 import Footer from "./../footer/footer";
 
-const Wrapper = Styled.div`
+const Wrapper = styled.div`
   margin: 0;
   padding: 0;
 `;
 
-const Nav = Styled.div`
+const Nav = styled.div`
   background-color: #ffffff;
   font-family: "Mulish", sans-serif;
 `;
 
-const Subnav = Styled.div`
+const Subnav = styled.div`
   display: flex;
   width: 100%;
 `;
 
-const Sectionleft = Styled.div` 
+const Sectionleft = styled.div` 
   display: block;
   margin-left: 1rem;
   width: 65%;
 `;
 
-const Section = Styled.section`
+const Section = styled.section`
   margin: 0;
   padding: 0;
 `;
 
-const Title = Styled.h1`
+const Title = styled.h1`
   color: #424851;
   font-family: "Mulish", "Arial", sans-serif;
   font-weight: 900;
@@ -45,14 +45,14 @@ const Title = Styled.h1`
   text-align: center;
 `;
 
-const TitleI = Styled.h2`
+const TitleI = styled.h2`
   color: #424851;
   font-size: 3rem;
   font-weight: 900;
   margin-left: 4rem;
 `;
 
-const TitleII = Styled.h3`
+const TitleII = styled.h3`
   color: #424851;
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
@@ -60,7 +60,7 @@ const TitleII = Styled.h3`
   margin-left: 1.5rem;
 `;
 
-const Titleii = Styled.h3`
+const Titleii = styled.h3`
   color: #ffffff;
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
@@ -68,14 +68,14 @@ const Titleii = Styled.h3`
   margin-left: 1.5rem;
 `;
 
-const Author = Styled.p`
+const Author = styled.p`
   color: #424851;
   font-size: 1rem;
   font-weight: 900;
   margin: 0 0 0 4rem;
 `;
 
-const Article = Styled.p`
+const Article = styled.p`
   color: #424851;
   font-family: "Mulish", sans-serif;
   font-size: 1rem;
@@ -85,7 +85,7 @@ const Article = Styled.p`
   padding-bottom: 3rem;
 `;
 
-const ArticleI = Styled.p`
+const ArticleI = styled.p`
   color: #424851;
   font-family: "Mulish", sans-serif;
   font-size: 1rem;
@@ -94,7 +94,7 @@ const ArticleI = Styled.p`
   margin-left: 1.5rem;
 `;
 
-const Articlei = Styled.p`
+const Articlei = styled.p`
   color: #ffffff;
   font-family: "Mulish", sans-serif;
   font-size: 1rem;
@@ -103,14 +103,14 @@ const Articlei = Styled.p`
   margin-left: 1.5rem;
 `;
 
-const Span = Styled.span`
+const Span = styled.span`
   color: #f13b3b;
-  font weigth: 700;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 `;
 
-const Anchor = Styled.a`
+const Anchor = styled.a`
   background: #f13b3b;
   box-sizing: border-box;
   box-shadow: 0 10px 15px 0 rgba(241, 59, 59, 0.2);
@@ -125,81 +125,63 @@ const Anchor = Styled.a`
   padding: 5px 20px 5px 20px;
 `;
 
-const AnchorI = Styled.a`
-  float: left:
+const AnchorI = styled.a`
+  float: left;
   margin-right: 5px;
-  margin-botton: 5px;
-  border: none !important;
-    border-top-color: currentcolor;
-    border-top-style: none;
-    border-top-width: medium;
-    border-right-color: currentcolor;
-    border-right-style: none;
-    border-right-width: medium;
-    border-bottom-color: currentcolor;
-    border-bottom-style: none;
-    border-bottom-width: medium;
-    border-left-color: currentcolor;
-    border-left-style: none;
-    border-left-width: medium;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
+  margin-bottom: 5px;
   padding: 0;
   text-align: center;
   text-decoration: none;
   letter-spacing: normal;
 `;
 
-const Picture = Styled.img`
+const Picture = styled.img`
   height: 491px;
   width: 735px;
   object-fit: cover;
   padding-bottom: 1rem;
 `;
 
-const Navnewsletter = Styled.div`
+const Navnewsletter = styled.div`
   background-color: #E0E0E0;
   padding: 2.5rem;
   max-width: 400px;
 `;
 
-const NavTopics = Styled.div`
+const NavTopics = styled.div`
   background-color: #E0E0E0;
   max-width: 400px;
   padding: 1rem;
 
 `;
 
-const SectionRight = Styled.div`
+const SectionRight = styled.div`
   display: block;
   margin: 0 5rem 0 2.5rem;
   width:45%;
 `;
 
-const SubnavRight = Styled.div`
+const SubnavRight = styled.div`
   margin: 0 0 2rem 0;
 `;
 
-const NavSocial = Styled.div`
+const NavSocial = styled.div`
   background-color: #424851;
   color: #ffffff;
   padding: 1rem;
 `;
 
-const Form = Styled.form`
+const Form = styled.form`
   color: #424851;
   display: block;
   font-family: "Mulish", sans-serif;
   padding: 1rem;
 `;
 
-const NavForm = Styled.div`
+const NavForm = styled.div`
 `;
 
-const Input = Styled.input`
+const Input = styled.input`
   border: 1px solid rgba(66, 72, 81, 0.2);
   background: 0;
   border-top: 0;      
@@ -208,54 +190,49 @@ const Input = Styled.input`
   text-align: left;
   padding: 15px 0;
   outline: none;
-  inline: none;
   width: 100%;
   height: auto;
   color: inherit;
-  font: inherit;
   display: inline-block;  
   vertical-align: baseline;
-  webkit-backface-visibility: hidden;  
 `;
 
-const Suscribe = Styled.section`
+const Suscribe = styled.section`
   padding-left: 1rem;
   padding-right: 1rem;
 `;
 
-const InputI = Styled.input`
+const InputI = styled.input`
   color: #ffffff;
   background: #f13b3b;
   border: none;
-  lineheight: 1.3;
   margin: 0;
   padding: 10px;
-  font-family: "Mulish", sans-serif;
-  font-height: 1.4rem;
+  font-family: "Mulish", sans-serif;  
   font-weight: bold;
   text-align: center;
   width: 100%;
 `;
 
-const Unorder = Styled.ul`
+const Unorder = styled.ul`
   display: block;
   list-style-type: none;
 `;
 
-const List = Styled.li`
+const List = styled.li`
   font-family: "Mulish", sans-serif;
 `;
 
-const Unordersocial = Styled.ul`
+const Unordersocial = styled.ul`
   display: flex;
   list-style-type: none;
 `;
 
-const Listitemsocial = Styled.li`
+const Listitemsocial = styled.li`
   margin: 0 5px;
 `;
 
-const StyledFacebook = Styled(FaFacebook)`
+const styledFacebook = styled(FaFacebook)`
   color: #3e5b98;
   // width: 50px;
   // height: 50ps;
@@ -264,19 +241,19 @@ const StyledFacebook = Styled(FaFacebook)`
   // border-radius: 50%;
 `;
 
-const SocialWrapper = Styled.div`
+const SocialWrapper = styled.div`
   background-color: #E0E0E0;
 `;
 
-const StyledTwitter = Styled(AiFillTwitterCircle)`
+const styledTwitter = styled(AiFillTwitterCircle)`
   color: #4da7de;
 `;
 
-const StyledPinterest = Styled(FaPinterest)`
+const styledPinterest = styled(FaPinterest)`
   color: #c92619;
 `;
 
-const StyledInstagram = Styled(AiFillInstagram)`
+const styledInstagram = styled(AiFillInstagram)`
   color: #000000;
 `;
 
@@ -426,10 +403,10 @@ function LatestArticles(){
                 <Articlei>We are a team of dedicated professionals delivering high quality WordPress themes and plugins.</Articlei>
                 <Section>
                   <Unordersocial>
-                    <Listitemsocial><AnchorI href="" ><StyledFacebook /></AnchorI></Listitemsocial>                  
-                    <Listitemsocial><AnchorI href=""><StyledTwitter /></AnchorI></Listitemsocial>                  
-                    <Listitemsocial><AnchorI href=""><StyledPinterest /></AnchorI></Listitemsocial>                  
-                    <Listitemsocial><AnchorI href=""><StyledInstagram /></AnchorI></Listitemsocial>
+                    <Listitemsocial><AnchorI href="" ><styledFacebook /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><styledTwitter /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><styledPinterest /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><styledInstagram /></AnchorI></Listitemsocial>
                   </Unordersocial>
                 </Section>
               </NavSocial>
