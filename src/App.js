@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "./mediaQueries";
 const { default: Dashboard } = require("./components/dashboard/Dashboard");
 
 const MainWrapper = styled.section`
   width: 100%;
-  max-width: 1200px;
+  @media ${device.lg} {
+    padding: 0;
+  }
 `;
 
 function App() {
@@ -14,5 +17,5 @@ function App() {
     </MainWrapper>
   );
 };
-
+ 
 export default App;
