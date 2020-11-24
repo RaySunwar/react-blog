@@ -1,22 +1,24 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
-import  { IconContext } from "react-icons";
+import { device } from "./../../mediaQueries";
+import { IconContext } from "react-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiArrowDropDownLine} from "react-icons/ri";
 
 const Nav = Styled.div`
   background-color: #ffffff;
   font-family: "Mulish", Arial, sans-serif;
-  max-width: 1200px;
   width: 100%;
+  @media ${device.lg}{
+    max-width: 1200px;
+  }
 `;
 
 const NavHeader = Styled.div`
-  max-width: 100%;
+  align-items: center;
   padding: 10px 10px;
   width: 100%;
   display: flex;
-  align-items: center;
   margin: 0 auto;
 `;
 
@@ -32,6 +34,12 @@ const NavRight = Styled.div`
   margin: 1rem;
   text-align: left;
   width: 60%;
+  @media ${device.xs}{
+    display: block;
+    /* min-width: 350px; */
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
 `;
 
 const Title = Styled.h1`
@@ -124,7 +132,7 @@ const ListHamburger = Styled.li`
   }
 `;
 
-function Header(){
+function Header() {
   return (
     <Fragment>
       <Nav>
