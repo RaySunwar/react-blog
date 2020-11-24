@@ -232,7 +232,7 @@ const Listitemsocial = styled.li`
   margin: 0 5px;
 `;
 
-const styledFacebook = styled(FaFacebook)`
+const StyledFacebook = styled(FaFacebook)`
   color: #3e5b98;
   // width: 50px;
   // height: 50ps;
@@ -245,15 +245,15 @@ const SocialWrapper = styled.div`
   background-color: #E0E0E0;
 `;
 
-const styledTwitter = styled(AiFillTwitterCircle)`
+const StyledTwitter = styled(AiFillTwitterCircle)`
   color: #4da7de;
 `;
 
-const styledPinterest = styled(FaPinterest)`
+const StyledPinterest = styled(FaPinterest)`
   color: #c92619;
 `;
 
-const styledInstagram = styled(AiFillInstagram)`
+const StyledInstagram = styled(AiFillInstagram)`
   color: #000000;
 `;
 
@@ -403,10 +403,10 @@ function LatestArticles(){
                 <Articlei>We are a team of dedicated professionals delivering high quality WordPress themes and plugins.</Articlei>
                 <Section>
                   <Unordersocial>
-                    <Listitemsocial><AnchorI href="" ><styledFacebook /></AnchorI></Listitemsocial>                  
-                    <Listitemsocial><AnchorI href=""><styledTwitter /></AnchorI></Listitemsocial>                  
-                    <Listitemsocial><AnchorI href=""><styledPinterest /></AnchorI></Listitemsocial>                  
-                    <Listitemsocial><AnchorI href=""><styledInstagram /></AnchorI></Listitemsocial>
+                    <Listitemsocial><AnchorI href="" ><StyledFacebook /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><StyledTwitter /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><StyledPinterest /></AnchorI></Listitemsocial>                  
+                    <Listitemsocial><AnchorI href=""><StyledInstagram /></AnchorI></Listitemsocial>
                   </Unordersocial>
                 </Section>
               </NavSocial>
