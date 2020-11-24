@@ -28,7 +28,7 @@ const Subtitle = Styled.h1`
 `;
 
 function Featured(){
-    return(
+    return (
         <Fragment>
             <Wrapper>
                 <Title>Featured articles</Title>
