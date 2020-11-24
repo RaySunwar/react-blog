@@ -1,49 +1,49 @@
 import React from "react";
-import Styled from "styled-components";
+import styled from "styled-components";
 import { SiFacebook, SiTwitter, SiPinterest } from "react-icons/si";
 
-const Nav = Styled.div`
+const Nav = styled.div`
   background-color: #ffffff;
   font-family: "Mulish", sans-serif;
 `;
 
-const Subnav = Styled.div`
+const Subnav = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 5rem;
 `;
 
-const Section = Styled.section`
+const Section = styled.section`
   background-color: #ffffff;
 `;
 
-const Title = Styled.h3`
+const Title = styled.h3`
   background-color: #ffffff;
 `;
 
-const Unorderlist = Styled.ul`
+const Unorderlist = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
 `;
 
-const Ulisticon = Styled.ul`
+const Ulisticon = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
 `;
 
-const Listitem = Styled.li`
+const Listitem = styled.li`
   margin: 12px 0;
   position: relative;
 `;
 
-const Link = Styled.div`
+const Link = styled.div`
   text-align: left;
 `;
 
-const Anchor = Styled.a`
+const Anchor = styled.a`
   color: #424851;
   text-align: center;
   &:hover {
@@ -51,33 +51,32 @@ const Anchor = Styled.a`
   }
 `;
 
-const AnchorI = Styled.a`
+const AnchorI = styled.a`
   color: #424851;
   text-align: center;
   margin-right: 5px;
-  margin-botton: 5px;
 `;
 
 
-const Footernav = Styled.div`
+const Footernav = styled.div`
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding: 0;
 `;
 
-const Footerlink = Styled.p`
+const Footerlink = styled.p`
   text-align: center;
 `;
 
-const StyledFacebook = Styled(SiFacebook)`
+const StyledFacebook = styled(SiFacebook)`
   color: #3e5b98;  
 `;
 
-const StyledTwitter = Styled(SiTwitter)`
+const StyledTwitter = styled(SiTwitter)`
   color: #4da7de;  
 `;
 
-const StyledPinterest = Styled(SiPinterest)`
+const StyledPinterest = styled(SiPinterest)`
   color: #c92619;
 `;
 
