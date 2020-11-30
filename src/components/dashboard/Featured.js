@@ -3,12 +3,12 @@ import Styled from "styled-components";
 import { device } from "./../../mediaQueries";
 
 const Wrapper = Styled.div`
-    width: 100%;
+  width: 100%;
 `;
 
 const Nav = Styled.div`
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 `;
 
 const Title = Styled.h1`
@@ -39,16 +39,18 @@ const Subtitle = Styled.h2`
 `;
 
 function Featured(){
-    return (
-        <Fragment>
-            <Wrapper>
-                <Title>Featured articles</Title>
-            </Wrapper>
-            <Nav>
-                <Subtitle>Fetch Data will be render here</Subtitle>
-            </Nav>
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      <Wrapper>
+        <Nav>
+          <Title>Featured articles</Title>
+        </Nav>
+        <Nav>
+          <Subtitle>Fetch Data will be render here</Subtitle>
+        </Nav>
+      </Wrapper>
+    </Fragment>
+  );
 };
 
 export default Featured;
