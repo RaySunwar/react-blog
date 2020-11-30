@@ -22,7 +22,10 @@ const Nav = Styled.div`
 
 const NavHeader = Styled.div`
   align-items: center;
-  margin: 10px 10px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 77px;
+  margin-left: 30px;
   width: 100%;
   display: flex;
 
