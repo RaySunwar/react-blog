@@ -42,6 +42,8 @@ const Sectionleft = styled.div`
 `;
 
 const Section = styled.section`
+  margin: 0;
+  padding: 0;
 `;
 
 const Title = styled.h1`
@@ -117,7 +119,7 @@ const Article = styled.p`
   font-weight: 500;
   margin-top: 24px;
   margin-left: 4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 85px;
 
   @media ${device.sm}{
     font-size: 1rem;
