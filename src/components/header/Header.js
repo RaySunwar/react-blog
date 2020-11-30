@@ -8,44 +8,62 @@ import { RiArrowDropDownLine} from "react-icons/ri";
 const Nav = Styled.div`
   background-color: #ffffff;
   font-family: "Mulish", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   width: 100%;
+
   @media ${device.lg}{
     max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 `;
 
 const NavHeader = Styled.div`
   align-items: center;
-  padding: 10px 10px;
+  margin: 10px 10px;
   width: 100%;
   display: flex;
-  margin: 0 auto;
+
+  @media ${device.sm}{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+  }
 `;
 
 const NavLeft = Styled.div`
-  margin: 1rem;
   text-align: left;
   width: 40%;
+  padding-left: 2rem;
+
+  @media ${device.sm}{
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+  }
 `;
 
 
 const NavRight = Styled.div`
   display: flex;
-  margin: 1rem;
   text-align: left;
   width: 60%;
-  @media ${device.xs}{
-    display: block;
-    /* min-width: 350px; */
-    padding-right: 7.5px;
-    padding-left: 7.5px;
-  }
+  justify-content: flex-end;
 `;
 
 const Title = Styled.h1`
   color: #f13b3b;
   font-size: 2.5rem;
   font-weight: 900;
+  margin: 0;
+
+  @media ${device.sm}{
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
   &:hover {
   color: #424851;
   }
@@ -55,6 +73,13 @@ const UnOrderList = Styled.ul`
   display: flex;
   justify-content: "space-between";
   list-style-type: none;
+  
+  @media ${device.sm}{
+    display: none;
+    font-size: 1.4rem;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
 `;
 
 const ListItem = Styled.li`
@@ -64,13 +89,14 @@ const ListItem = Styled.li`
   font-size: 1rem;
   position: relative;
   padding-right: 1rem;
+
   &:hover {
     color: #f13b3b;
     > ul {
       display: block;
     }
   }
-`;
+ `;
 
 const SubunorderList = Styled.ul`
   background: #ffffff;
@@ -117,6 +143,10 @@ const UnorderHamburger = Styled.ul`
   display: inline;
   justify-content: "space-between";
   padding-inline-start: 0;
+
+  @media ${device.sm}{
+    margin-top: 1.2rem;
+  }
 `;
 
 const ListHamburger = Styled.li`
@@ -129,6 +159,10 @@ const ListHamburger = Styled.li`
   padding-right: 1.5rem;
   &:hover {
     color: #f13b3b;
+  }
+  
+  @media ${device.sm}{
+    padding-right: 0;
   }
 `;
 

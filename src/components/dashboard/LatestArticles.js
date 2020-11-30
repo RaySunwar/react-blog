@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import { device } from "./../../mediaQueries";
 import Image1 from "./../images/image1.jpg";
 import Image2 from "./../images/image2.jpg";
 import Image3 from "./../images/image3.jpg"; 
@@ -23,17 +24,28 @@ const Nav = styled.div`
 const Subnav = styled.div`
   display: flex;
   width: 100%;
+
+  @media ${device.sm}{
+    display: block;
+  }
 `;
 
 const Sectionleft = styled.div` 
   display: block;
-  margin-left: 1rem;
+  margin-left: 2.5rem;
+  padding:auto;
   width: 65%;
+
+  @media ${device.sm}{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 
 const Section = styled.section`
-  margin: 0;
-  padding: 0;
+  padding-left: 7px;
+  padding-right: 7px;
 `;
 
 const Title = styled.h1`
@@ -41,15 +53,30 @@ const Title = styled.h1`
   font-family: "Mulish", "Arial", sans-serif;
   font-weight: 900;
   font-size: 3rem;
-  padding-top: 2rem;
   text-align: center;
+
+  @media ${device.sm}{
+    font-size: 2rem;
+    padding-top: 0;
+  }
 `;
 
 const TitleI = styled.h2`
   color: #424851;
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: 900;
   margin-left: 4rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 120%;
+
+  @media ${device.sm}{
+    font-size: 1.7rem;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 `;
 
 const TitleII = styled.h3`
@@ -58,6 +85,10 @@ const TitleII = styled.h3`
   font-size: 1.5rem;
   font-weight: 900;
   margin-left: 1.5rem;
+
+  @media ${device.sm}{
+    margin: 0 0 1rem 0;
+  }
 `;
 
 const Titleii = styled.h3`
@@ -73,6 +104,14 @@ const Author = styled.p`
   font-size: 1rem;
   font-weight: 900;
   margin: 0 0 0 4rem;
+
+  @media ${device.sm}{
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 `;
 
 const Article = styled.p`
@@ -83,6 +122,15 @@ const Article = styled.p`
   margin-top: 24px;
   margin-left: 4rem;
   padding-bottom: 3rem;
+
+  @media ${device.sm}{
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 12px;
+    margin-right: 0;
+    margin-bottom: 0;
+    max-width: 383px; 
+  }
 `;
 
 const ArticleI = styled.p`
@@ -92,6 +140,11 @@ const ArticleI = styled.p`
   font-weight: 500;
   max-width: 300px;
   margin-left: 1.5rem;
+  
+  @media ${device.sm}{
+    margin: 0;
+  }
+  
 `;
 
 const Articlei = styled.p`
@@ -120,9 +173,15 @@ const Anchor = styled.a`
   font-weight: 900;
   float: none;
   margin-left: 4rem;
+  margin-top: 20px;
   position: static;
   text-decoration: none;
   padding: 5px 20px 5px 20px;
+
+  @media ${device.sm}{
+    margin-left: 5px;
+    margin-top: 0;
+  }
 `;
 
 const AnchorI = styled.a`
@@ -137,15 +196,25 @@ const AnchorI = styled.a`
 
 const Picture = styled.img`
   height: 491px;
-  width: 735px;
   object-fit: cover;
-  padding-bottom: 1rem;
+  width: 100%;
+
+ @media ${device.sm}{
+  height: auto;
+  width: 100%;
+  padding-bottom: 8px;
+  object-fit: cover;
+ }
 `;
 
 const Navnewsletter = styled.div`
   background-color: #E0E0E0;
   padding: 2.5rem;
   max-width: 400px;
+
+  @media ${device.sm}{
+    padding: 15px;
+  }
 `;
 
 const NavTopics = styled.div`
@@ -157,12 +226,26 @@ const NavTopics = styled.div`
 
 const SectionRight = styled.div`
   display: block;
-  margin: 0 5rem 0 2.5rem;
-  width:45%;
+  margin-left: 4rem;
+  padding: 0;
+  width: 45%;
+
+  @media ${device.sm}{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 `;
 
 const SubnavRight = styled.div`
-  margin: 0 0 2rem 0;
+  padding-bottom: 2.5rem;
+  max-width: 400px;
+
+  @media ${device.sm}{
+    display: block;
+    height: auto;
+    width: 100%;
+  }
 `;
 
 const NavSocial = styled.div`
@@ -176,9 +259,16 @@ const Form = styled.form`
   display: block;
   font-family: "Mulish", sans-serif;
   padding: 1rem;
+
+  
+  @media ${device.sm}{
+    padding: 1rem 0;  
+  }
 `;
 
 const NavForm = styled.div`
+ margin: 0;
+ padding: 0;
 `;
 
 const Input = styled.input`
@@ -200,6 +290,11 @@ const Input = styled.input`
 const Suscribe = styled.section`
   padding-left: 1rem;
   padding-right: 1rem;
+
+  @media ${device.sm}{
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 const InputI = styled.input`
@@ -234,11 +329,6 @@ const Listitemsocial = styled.li`
 
 const StyledFacebook = styled(FaFacebook)`
   color: #3e5b98;
-  // width: 50px;
-  // height: 50ps;
-  // font-size: 16px;
-  // line-height: 55px;
-  // border-radius: 50%;
 `;
 
 const SocialWrapper = styled.div`

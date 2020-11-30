@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "./../../mediaQueries";
 import { SiFacebook, SiTwitter, SiPinterest } from "react-icons/si";
 
 const Nav = styled.div`
@@ -11,6 +12,12 @@ const Subnav = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 5rem;
+
+  @media ${device.sm} {
+    display: block;
+    margin: 8px;
+    width: 100%;
+  }
 `;
 
 const Section = styled.section`
@@ -41,6 +48,7 @@ const Listitem = styled.li`
 
 const Link = styled.div`
   text-align: left;
+  max-width: 300px;
 `;
 
 const Anchor = styled.a`
@@ -57,11 +65,14 @@ const AnchorI = styled.a`
   margin-right: 5px;
 `;
 
-
 const Footernav = styled.div`
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding: 0;
+
+  @media ${device.sm}{
+    font-size: 13px;
+  }
 `;
 
 const Footerlink = styled.p`
@@ -86,7 +97,7 @@ const footer = () => {
       <Subnav>
         <Section>
           <Title>React Blog</Title>
-          <Link><Anchor>A multi-concept personal blog and <br /> magazine WordPress theme</Anchor>
+          <Link><Anchor>A multi-concept personal blog and magazine WordPress theme</Anchor>
             <Ulisticon>
               <Listitem><AnchorI><StyledFacebook /></AnchorI></Listitem>
               <Listitem><AnchorI><StyledTwitter /></AnchorI></Listitem>
