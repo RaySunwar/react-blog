@@ -3,13 +3,18 @@ import styled from "styled-components";
 import Header from "../header/Header";
 import Featured from "./Featured";
 import LatestArticles from "./LatestArticles";
+import { device } from "./../../mediaQueries";
 import Image0 from "./../images/image0.jpg";
 
 const Nav = styled.div`
   background-color: #ffffff;
-  margin: 15px;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
+
+  @media ${device.sm} {
+    margin: 0;
+    width: 100%;      
+  }
 `;
 
 const Subnav = styled.div`
@@ -17,6 +22,13 @@ const Subnav = styled.div`
   margin-left: auto;
   display: flex;
   font-family: "Mulish", sans-serif;
+
+  @media ${device.sm}{
+    display: block;
+    font-size: 2rem;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 `;
 
 const NavLeft = styled.div`
@@ -25,6 +37,14 @@ const NavLeft = styled.div`
   position: relative;
   text-align: left;
   max-width: 50%;
+
+  @media ${device.sm}{
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  
   &::after {
     background-color: #f2f3f3;
     border-top-left-radius: 63% 70%;
@@ -34,12 +54,16 @@ const NavLeft = styled.div`
     background: rgba(66,72,81,0.1);
     content: "";
     display: block; 
-    height: 540px;
+    height: 608px;
     left: 25%;
     position: absolute;
     top: 0;
-    width: 540px;
+    width: 615px;
     z-index: -1;
+
+    @media ${device.sm}{
+      display: none;
+    }
   };
 `;
 
@@ -47,17 +71,30 @@ const NavRight = styled.div`
   display: block;
   margin-right: 4rem;
   padding-top: 2.5rem;  
-  width: 50%; 
+  width: 50%;
+
+  @media ${device.sm}{
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    width: 100%;
+  }
 `;
 
 const Title = styled.h1`
   box-sizing: inherit;
   color: #424851;
   font-weight: 900;
-  font-size: 4.2rem;
+  font-size: 38px;
   margin-left: 0;
   padding-top: 3rem;
   text-align: left;
+
+  @media ${device.sm}{
+    font-size: 1.7rem;
+    margin: 7px;
+    padding-top: 0;
+  }
 `;
 
 const Content = styled.p`
@@ -66,6 +103,11 @@ const Content = styled.p`
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 0;
+
+  @media ${device.sm}{
+    font-size: 1rem;
+    padding-top: 0;
+  }
 `;
 
 const Button = styled.p`
@@ -87,6 +129,13 @@ const Anchor = styled.a`
   position: static;
   text-decoration: none;
   z-index: auto;
+
+  @media ${device.sm}{
+    font-size: 1rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+    padding: 5px 15px;
+  }
 `;
 
 const FirstImg = styled.img`
@@ -95,9 +144,9 @@ const FirstImg = styled.img`
   border-top-right-radius: 37% 68%;
   border-bottom-right-radius: 50% 32%;
   border-bottom-left-radius: 50% 30%;
-  height: 540px;
   object-fit: cover;
-  width: 540px; 
+  height: auto;
+  width: 100%;
 `;
 
 function Dashboard(){
@@ -111,7 +160,7 @@ function Dashboard(){
           <FirstImg src={Image0} alt="" /> 
         </NavLeft>
         <NavRight>
-          <Title>Unleash Your <br />Creativity</Title>
+          <Title>Unleash your <br/> creativity</Title>
           <Content>Johannes is a theme carefully designed and developed to get the most out of the new WordPress editor. Unleash the power of blocks - an awesome new way of creating rich content in WordPress!</Content>
           <Button><Anchor href="true">Find out more</Anchor></Button>
         </NavRight>
