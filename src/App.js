@@ -15,7 +15,7 @@ function App() {
     <MainWrapper>
       <Dashboard />
     </MainWrapper>
-  );
+);  
 };
  
 export default App;
