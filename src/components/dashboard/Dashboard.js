@@ -18,8 +18,7 @@ const Nav = styled.div`
 `;
 
 const Subnav = styled.div`
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 68px;
   display: flex;
   font-family: "Mulish", sans-serif;
 
@@ -32,8 +31,7 @@ const Subnav = styled.div`
 `;
 
 const NavLeft = styled.div`
-  margin-left: 2.5rem;
-  margin-right: 1.5rem;
+  padding-right: 53px;
   position: relative;
   text-align: left;
   max-width: 50%;
@@ -54,11 +52,11 @@ const NavLeft = styled.div`
     background: rgba(66,72,81,0.1);
     content: "";
     display: block; 
-    height: 608px;
+    height: 611px;
     left: 25%;
     position: absolute;
     top: 0;
-    width: 615px;
+    width: 618px;
     z-index: -1;
 
     @media ${device.sm}{
@@ -69,7 +67,6 @@ const NavLeft = styled.div`
 
 const NavRight = styled.div`
   display: block;
-  margin-right: 4rem;
   padding-top: 2.5rem;  
   width: 50%;
 
@@ -85,7 +82,8 @@ const Title = styled.h1`
   box-sizing: inherit;
   color: #424851;
   font-weight: 900;
-  font-size: 38px;
+  font-size: 50px;
+  line-height: 50px;
   margin-left: 0;
   padding-top: 3rem;
   text-align: left;
@@ -112,7 +110,6 @@ const Content = styled.p`
 
 const Button = styled.p`
   box-sizing: inherit;
-  font-size: 1rem;
   margin-top: 0;
 `;
 
@@ -122,8 +119,8 @@ const Anchor = styled.a`
   box-shadow: 0 10px 15px 0 rgba(241,59,59,0.2);
   color: #ffffff;
   display: inline-block;  
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 900;
   float: none;
   padding:  5px 20px 5px 20px;
   position: static;
