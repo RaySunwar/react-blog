@@ -12,7 +12,7 @@ import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 import Footer from "./../footer/footer";
 
 const Wrapper = styled.div`
-  margin: 0;
+  margin: 0 64px;
   padding: 0;
 `;
 
@@ -32,8 +32,6 @@ const Subnav = styled.div`
 
 const Sectionleft = styled.div` 
   display: block;
-  margin-left: 2.5rem;
-  padding:auto;
   width: 65%;
 
   @media ${device.sm}{
@@ -44,8 +42,6 @@ const Sectionleft = styled.div`
 `;
 
 const Section = styled.section`
-  padding-left: 7px;
-  padding-right: 7px;
 `;
 
 const Title = styled.h1`
@@ -225,10 +221,9 @@ const NavTopics = styled.div`
 `;
 
 const SectionRight = styled.div`
-  display: block;
-  margin-left: 4rem;
-  padding: 0;
-  width: 45%;
+  display: block; 
+  padding-left: 50px;
+  width: 35%;
 
   @media ${device.sm}{
     margin: 0;
