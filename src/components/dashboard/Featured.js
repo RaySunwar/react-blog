@@ -20,7 +20,7 @@ const Title = Styled.h1`
   text-align: center;
 
   @media ${device.sm}{
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-top: 0;
   }
 `;
@@ -33,7 +33,7 @@ const Subtitle = Styled.h2`
   text-align: center;
 
   @media ${device.sm}{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding-top: 0;
   }
 `;
