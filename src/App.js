@@ -5,8 +5,7 @@ const { default: Dashboard } = require("./components/dashboard/Dashboard");
 
 const MainWrapper = styled.section`
   width: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 0;
   
   @media ${device.lg} {
     padding: 0;
