@@ -3,7 +3,7 @@ import Styled from "styled-components";
 import { device } from "./../../mediaQueries";
 import { IconContext } from "react-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RiArrowDropDownLine} from "react-icons/ri";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Nav = Styled.div`
   background-color: #ffffff;
@@ -13,7 +13,7 @@ const Nav = Styled.div`
   width: 100%;
 
   @media ${device.lg}{
-    max-width: 1200px;
+    max-width: 1245px;  
     margin: 0;
     padding: 0;
     width: 100%;
