@@ -43,7 +43,7 @@ const NavLeft = Styled.div`
 
   @media ${device.sm}{
     margin: 0;
-    padding-left: 0;
+    padding-left: 5px;
     width: 100%;
   }
 `;
@@ -54,6 +54,12 @@ const NavRight = Styled.div`
   text-align: left;
   width: 60%;
   justify-content: flex-end;
+
+  @media ${device.sm}{
+    margin: 0;
+    padding-right: 5px;
+    width: 100%;
+  }
 `;
 
 const Title = Styled.h1`
