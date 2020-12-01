@@ -14,6 +14,10 @@ import Footer from "./../footer/footer";
 const Wrapper = styled.div`
   margin: 0 64px;
   padding: 0;
+
+  @media ${device.sm}{
+    margin: 0 8px;
+  }
 `;
 
 const Nav = styled.div`
@@ -54,7 +58,7 @@ const Title = styled.h1`
   text-align: center;
 
   @media ${device.sm}{
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-top: 0;
   }
 `;
