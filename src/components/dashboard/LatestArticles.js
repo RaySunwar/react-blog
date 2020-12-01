@@ -74,6 +74,7 @@ const TitleI = styled.h2`
 
   @media ${device.sm}{
     font-size: 1.7rem;
+    line-height: 1;
     margin-top: 8px;
     margin-left: 0;
     margin-right: 0;
