@@ -25,8 +25,7 @@ const Subnav = styled.div`
   @media ${device.sm}{
     display: block;
     font-size: 2rem;
-    padding-left: 7px;
-    padding-right: 7px;
+    margin: 0 25px;
   }
 `;
 
@@ -38,8 +37,7 @@ const NavLeft = styled.div`
 
   @media ${device.sm}{
     max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    padding-right: 0;
     text-align: center;
   }
   
@@ -73,7 +71,6 @@ const NavRight = styled.div`
   @media ${device.sm}{
     margin-right: 0;
     padding-top: 0;
-    padding-bottom: 10px;
     width: 100%;
   }
 `;
@@ -90,7 +87,9 @@ const Title = styled.h1`
 
   @media ${device.sm}{
     font-size: 1.7rem;
-    margin: 7px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 15px;
     padding-top: 0;
   }
 `;
@@ -104,13 +103,17 @@ const Content = styled.p`
 
   @media ${device.sm}{
     font-size: 1rem;
-    padding-top: 0;
+    margin-bottom: 0;
   }
 `;
 
 const Button = styled.p`
   box-sizing: inherit;
   margin-top: 0;
+
+  @media ${device.sm}{
+    margin-bottom: 0;
+  }
 `;
 
 const Anchor = styled.a`
@@ -146,7 +149,7 @@ const FirstImg = styled.img`
   width: 100%;
 `;
 
-function Dashboard(){
+function Dashboard() {
   return(
     <Fragment>
       <Nav>
@@ -157,7 +160,7 @@ function Dashboard(){
           <FirstImg src={Image0} alt="" /> 
         </NavLeft>
         <NavRight>
-          <Title>Unleash your <br/> creativity</Title>
+          <Title>Unleash your creativity</Title>
           <Content>Johannes is a theme carefully designed and developed to get the most out of the new WordPress editor. Unleash the power of blocks - an awesome new way of creating rich content in WordPress!</Content>
           <Button><Anchor href="true">Find out more</Anchor></Button>
         </NavRight>
