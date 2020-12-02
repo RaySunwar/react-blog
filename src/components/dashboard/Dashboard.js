@@ -59,7 +59,7 @@ const NavLeft = styled.div`
 
     @media ${device.sm}{
       display: none;
-    }
+    }    
   };
 `;
 

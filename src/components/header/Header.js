@@ -13,7 +13,7 @@ const Nav = Styled.div`
   width: 100%;
 
   @media ${device.lg}{
-    max-width: 1245px;  
+    max-width: 1200px;  
     margin: 0;
     padding: 0;
     width: 100%;
@@ -22,11 +22,8 @@ const Nav = Styled.div`
 
 const NavHeader = Styled.div`
   align-items: center;
-  margin-top: 10px;
-  margin-right: 30px;
-  margin-bottom: 50px;
-  margin-left: 30px;
   width: 100%;
+  margin-bottom: 2rem;
   display: flex;
 
   @media ${device.sm}{
@@ -39,7 +36,7 @@ const NavHeader = Styled.div`
 const NavLeft = Styled.div`
   text-align: left;
   width: 40%;
-  padding-left: 2rem;
+  padding-left: 60px;
 
   @media ${device.sm}{
     margin: 0;
@@ -82,8 +79,9 @@ const UnOrderList = Styled.ul`
   display: flex;
   justify-content: "space-between";
   list-style-type: none;
+  padding-left: 1rem;
   
-  @media ${device.sm}{
+  @media ${device.xs}, ${device.sm}{
     display: none;
     font-size: 1.4rem;
     padding-right: 7.5px;
@@ -165,7 +163,7 @@ const ListHamburger = Styled.li`
   font-weight: 700;
   font-size: 1rem;
   position: relative;
-  padding-right: 1.5rem;
+  padding-right: 3.5rem;
   &:hover {
     color: #f13b3b;
   }
