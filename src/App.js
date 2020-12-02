@@ -13,6 +13,7 @@ const MainWrapper = styled.section`
 `;
 
 function App() {
+  
   return (
     <MainWrapper>
       <Dashboard />
