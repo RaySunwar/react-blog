@@ -1,9 +1,9 @@
 export const breakpoints = {
-    xs: 576,
-    sm: 576,
-    md: 768,
-    lg: 922,
-    xl: 1200
+    xs: 480,    // Moble
+    sm: 768,    // Tablets
+    md: 1024,   // laptops, small screen
+    lg: 1200,   // Desktop, large screens
+    xl: 1201    // Extra lagre screens
 };
 
 export const size = {
@@ -18,6 +18,6 @@ export const device = {
     xs: `(max-width: ${size.xs})`,
     sm: `(max-width: ${size.sm})`,
     md: `(max-width: ${size.md})`,
-    lg: `(min-width: ${size.lg})`,
+    lg: `(max-width: ${size.lg})`,
     xl: `(min-width: ${size.xl})`
 };
