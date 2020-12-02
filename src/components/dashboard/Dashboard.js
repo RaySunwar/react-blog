@@ -54,7 +54,7 @@ const NavLeft = styled.div`
     left: 25%;
     position: absolute;
     top: 0;
-    width: 618px;
+    width: 678px;
     z-index: -1;
 
     @media ${device.sm}{
