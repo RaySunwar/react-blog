@@ -66,7 +66,7 @@ const Title = Styled.h1`
   margin: 0;
 
   @media ${device.sm}{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 0;
   }
 
