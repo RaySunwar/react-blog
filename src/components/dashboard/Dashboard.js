@@ -11,7 +11,7 @@ const Nav = styled.div`
   padding: 0;
   width: 100%;
 
-  @media ${device.sm} {
+  @media ${device.xs}, ${device.sm} {
     margin: 0;
     width: 100%;      
   }
@@ -25,7 +25,8 @@ const Subnav = styled.div`
   @media ${device.sm}{
     display: block;
     font-size: 2rem;
-    margin: 0 25px;
+    margin: 0 40px;
+    padding: 0 10px;
   }
 `;
 
@@ -91,6 +92,7 @@ const Title = styled.h1`
     margin-top: 0;
     margin-bottom: 15px;
     padding-top: 0;
+    justify-content: center;
   }
 `;
 
@@ -101,9 +103,16 @@ const Content = styled.p`
   font-weight: 400;
   margin-top: 0;
 
+  @media ${device.xs}{
+    font-size: 1rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
   @media ${device.sm}{
     font-size: 1rem;
     margin-bottom: 0;
+    justify-content: center;
   }
 `;
 

@@ -16,7 +16,8 @@ const Wrapper = styled.div`
   padding: 0;
 
   @media ${device.sm}{
-    margin: 0 8px;
+    margin: 0 40px;
+    padding: 0 10px;
   }
 `;
 
@@ -79,6 +80,7 @@ const TitleI = styled.h2`
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    justify-content: center;
   }
 `;
 
@@ -128,11 +130,11 @@ const Article = styled.p`
 
   @media ${device.sm}{
     font-size: 1rem;
+    justify-content: center;
     margin-left: 0;
     margin-top: 12px;
     margin-right: 0;
     margin-bottom: 0;
-    max-width: 383px; 
   }
 `;
 
@@ -216,6 +218,7 @@ const Navnewsletter = styled.div`
   max-width: 400px;
 
   @media ${device.sm}{
+    max-width: 768px;
     padding: 15px;
   }
 `;
@@ -225,6 +228,9 @@ const NavTopics = styled.div`
   max-width: 400px;
   padding: 1rem;
 
+  @media ${device.sm}{
+    max-width: 768px;
+  }
 `;
 
 const SectionRight = styled.div`
@@ -245,6 +251,7 @@ const SubnavRight = styled.div`
 
   @media ${device.sm}{
     display: block;
+    max-width: 768px;
     height: auto;
     width: 100%;
   }

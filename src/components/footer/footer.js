@@ -6,6 +6,11 @@ import { SiFacebook, SiTwitter, SiPinterest } from "react-icons/si";
 const Nav = styled.div`
   background-color: #ffffff;
   font-family: "Mulish", sans-serif;
+
+  @media ${device.sm}{
+    margin: 0 40px;
+    padding: 0 10px;
+  }
 `;
 
 const Subnav = styled.div`
