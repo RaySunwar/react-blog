@@ -22,13 +22,19 @@ const Nav = Styled.div`
 
 const NavHeader = Styled.div`
   align-items: center;
-  width: 100%;
-  margin-bottom: 2rem;
   display: flex;
+  margin-bottom: 2rem;
+  width: 100%;
 
   @media ${device.sm}{
     margin: auto;
     padding: auto;
+    width: 100%;
+  }
+
+  @media ${device.md}{
+    margin: auto;
+    padding-bottom: 2rem;
     width: 100%;
   }
 `;
@@ -42,6 +48,12 @@ const NavLeft = Styled.div`
     margin: 0;
     padding-left: 5px;
     width: 100%;
+  }
+
+  @media ${device.md}{
+    margin: 0;
+    padding-left: 60px;
+    width: 40%;
   }
 `;
 
@@ -57,6 +69,10 @@ const NavRight = Styled.div`
     padding-right: 5px;
     width: 100%;
   }
+
+  @media ${device.md}{
+    /* width: 50%; */
+  }
 `;
 
 const Title = Styled.h1`
@@ -68,6 +84,10 @@ const Title = Styled.h1`
   @media ${device.sm}{
     font-size: 2rem;
     margin-top: 0;
+  }
+
+  @media ${device.md}{
+    font-size: 2rem;
   }
 
   &:hover {
@@ -87,6 +107,10 @@ const UnOrderList = Styled.ul`
     padding-right: 7.5px;
     padding-left: 7.5px;
   }
+
+  @media ${device.md}{
+    /* font-size: 2rem;*/
+  }
 `;
 
 const ListItem = Styled.li`
@@ -96,6 +120,10 @@ const ListItem = Styled.li`
   font-size: 1rem;
   position: relative;
   padding-right: 1rem;
+
+  @media ${device.md}{
+    padding-right: 5px;
+  }
 
   &:hover {
     color: #f13b3b;
@@ -131,6 +159,12 @@ const Anchor = Styled.a`
   background: transparent;
   -webkit-box-align: center;
   text-decoration: none;
+
+  @media ${device.md}{
+    /* font-size: 2rem;
+    margin-top: 0;  */
+  }
+
   &:hover :: before {
     color: #424851;
     display: block;
