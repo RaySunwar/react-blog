@@ -229,6 +229,36 @@ const Span = styled.span`
   padding: 0;
 `;
 
+const AnchorP = styled.a`
+  color: #424851;
+  background-color: transparent;
+  text-decoration: none;
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.35 ease-in-out;
+  }
+
+  img {
+    display: block;
+  }
+
+  &:hover{
+    &:before {
+      opacity: 1;
+    }
+  };
+`;
+
 const Anchor = styled.a`
   background: #f13b3b;
   box-sizing: border-box;
@@ -456,7 +486,9 @@ function LatestArticles(){
           <Sectionleft>
             <Nav>
               <Section>
-                <Picture src={Image1} alt="" />
+                <AnchorP href="">
+                  <Picture src={Image1} alt="" />
+                </AnchorP>
               </Section>
               <Section>
                 <Anchor>Motivation</Anchor>
@@ -473,7 +505,9 @@ function LatestArticles(){
             </Nav>
             <Nav>
               <Section>
-                <Picture src={Image2} alt="" />
+                <AnchorP href="">
+                  <Picture src={Image2} alt="" />
+                </AnchorP>
               </Section>
               <Section>
                 <Anchor>Lifestyle</Anchor>
@@ -490,7 +524,9 @@ function LatestArticles(){
             </Nav>
             <Nav>
               <Section>
-                <Picture src={Image3} alt="" /> 
+                <AnchorP href="">
+                  <Picture src={Image3} alt="" /> 
+                </AnchorP>
               </Section>
               <Section>
                 <Anchor>Lifestyle</Anchor>
@@ -507,7 +543,9 @@ function LatestArticles(){
             </Nav>
             <Nav>
               <Section>
-                <Picture src={Image4} alt="" />
+                <AnchorP href="">
+                  <Picture src={Image4} alt="" />
+                </AnchorP>
               </Section>
               <Section>
                 <Anchor>Lifestyle</Anchor>
@@ -524,7 +562,9 @@ function LatestArticles(){
             </Nav>
             <Nav>
               <Section>
-                <Picture src={Image5} alt="" />
+                <AnchorP href="">
+                  <Picture src={Image5} alt="" />
+                </AnchorP>
               </Section>
               <Section>
                 <Anchor>Motivation</Anchor>
@@ -541,7 +581,9 @@ function LatestArticles(){
             </Nav>
             <Nav>
               <Section>
-                <Picture src={Image6} alt="" />
+                <AnchorP href="">
+                  <Picture src={Image6} alt="" />
+                </AnchorP>
               </Section>      
               <Section>
                 <Anchor>Fashion</Anchor>
