@@ -55,7 +55,6 @@ const NavLeft = styled.div`
   };
 
   @media ${breakpoint.Tablet}{
-    /* display: block; */
     max-width: 100%;
     padding-right: 0;
     text-align: left;
