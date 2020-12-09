@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Header from "../header/Header";
 import Featured from "./Featured";
 import LatestArticles from "./LatestArticles";
-import { device } from "./../../mediaQueries";
+import breakpoint from "./../../mediaQueries";
 import Image0 from "./../images/image0.jpg";
 
 const Nav = styled.div`
@@ -11,7 +11,7 @@ const Nav = styled.div`
   padding: 0;
   width: 100%;
 
-  @media ${device.xs}, ${device.sm} {
+  @media ${breakpoint.Mobile}, ${breakpoint.Tablet}, ${breakpoint.Laptop}, ${breakpoint.Desktop} {
     margin: 0;
     width: 100%;      
   }
@@ -22,11 +22,23 @@ const Subnav = styled.div`
   display: flex;
   font-family: "Mulish", sans-serif;
 
-  @media ${device.sm}{
+  @media ${breakpoint.Mobile}{
     display: block;
     font-size: 2rem;
-    margin: 0 40px;
+    margin: 0 6px;
     padding: 0 10px;
+  }
+
+  @media ${breakpoint.Tablet}{
+    display: block;
+    margin: 0 20px;
+    padding: 0 10px;
+    max-width: 768px;
+  }
+
+  @media ${breakpoint.Laptop}{
+    max-width: 1024px;
+    margin: 0 14px;
   }
 `;
 
@@ -36,11 +48,24 @@ const NavLeft = styled.div`
   text-align: left;
   max-width: 50%;
 
-  @media ${device.sm}{
+  @media ${breakpoint.Mobile}{
     max-width: 100%;
     padding-right: 0;
-    text-align: center;
-  }
+    text-align: left;
+  };
+
+  @media ${breakpoint.Tablet}{
+    /* display: block; */
+    max-width: 100%;
+    padding-right: 0;
+    text-align: left;
+  };
+
+  @media ${breakpoint.Laptop}{
+    max-width: 100%;
+    padding-right: 15px;
+    text-align: left;
+  };
   
   &::after {
     background-color: #f2f3f3;
@@ -58,9 +83,21 @@ const NavLeft = styled.div`
     width: 678px;
     z-index: -1;
 
-    @media ${device.sm}{
+    @media ${breakpoint.Mobile}{
       display: none;
+    }
+
+    @media ${breakpoint.Tablet}{
+      display: none;
+      height: 545px;
+      width: 600px;
     }    
+
+    @media ${breakpoint.Laptop}{
+      display: flex;
+      height: 558px;
+      width: 537px;
+    }  
   };
 `;
 
@@ -69,10 +106,21 @@ const NavRight = styled.div`
   padding-top: 2.5rem;  
   width: 50%;
 
-  @media ${device.sm}{
+  @media ${breakpoint.Mobile}{
     margin-right: 0;
     padding-top: 0;
     width: 100%;
+  }
+
+  @media ${breakpoint.Tablet}{
+    margin-right: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  @media ${breakpoint.Laptop}{
+    margin-right: 0;
+    padding-top: 5rem;
   }
 `;
 
@@ -86,7 +134,25 @@ const Title = styled.h1`
   padding-top: 3rem;
   text-align: left;
 
-  @media ${device.sm}{
+  @media ${breakpoint.Mobile}{
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  @media ${breakpoint.Tablet}{
+    font-size: 35px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 3px;
+    justify-content: center;
+  }
+
+  @media ${breakpoint.Laptop}{
     font-size: 1.7rem;
     line-height: 1;
     margin-top: 0;
@@ -103,13 +169,13 @@ const Content = styled.p`
   font-weight: 400;
   margin-top: 0;
 
-  @media ${device.xs}{
+  @media ${breakpoint.Mobile}{
     font-size: 1rem;
     margin-bottom: 0;
     justify-content: center;
   }
 
-  @media ${device.sm}{
+  @media ${breakpoint.Tablet}{
     font-size: 1rem;
     margin-bottom: 0;
     justify-content: center;
@@ -120,7 +186,12 @@ const Button = styled.p`
   box-sizing: inherit;
   margin-top: 0;
 
-  @media ${device.sm}{
+  @media ${breakpoint.Mobile}{
+    margin-bottom: 0;
+  }
+
+  @media ${breakpoint.Tablet}{
+    margin-top: 10px;
     margin-bottom: 0;
   }
 `;
@@ -139,7 +210,7 @@ const Anchor = styled.a`
   text-decoration: none;
   z-index: auto;
 
-  @media ${device.sm}{
+  @media ${breakpoint.Mobile}{
     font-size: 1rem;
     letter-spacing: -1px;
     font-weight: bold;

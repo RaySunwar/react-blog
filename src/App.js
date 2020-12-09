@@ -1,14 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { device } from "./mediaQueries";
+import breakpoints from "./mediaQueries";
 const { default: Dashboard } = require("./components/dashboard/Dashboard");
 
 const MainWrapper = styled.section`
-  width: 100%;
   padding: 0;
+  width: 100%;
+
+  @media ${breakpoints.Tablet}{
+    max-width: 768px;
+  }
   
-  @media ${device.lg} {
+  @media ${breakpoints.Desktop} {
     padding: 0;
+    max-width: 1200px;
   }
 `;
 

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
-import { device } from "./../../mediaQueries";
+import breakpoints from "./../../mediaQueries";
 import { IconContext } from "react-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -12,12 +12,22 @@ const Nav = Styled.div`
   padding: 0;
   width: 100%;
 
-  @media ${device.lg}{
+  @media ${breakpoints.Tablet}{
+    max-width: 768px;  
+    width: 100%;
+  };
+
+  @media ${breakpoints.Laptop}{
+    max-width: 1024px;  
+    width: 100%;
+  };
+
+  @media ${breakpoints.Desktop}{
     max-width: 1200px;  
     margin: 0;
     padding: 0;
     width: 100%;
-  }
+  };
 `;
 
 const NavHeader = Styled.div`
@@ -26,13 +36,25 @@ const NavHeader = Styled.div`
   margin-bottom: 2rem;
   width: 100%;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     margin: auto;
     padding: auto;
     width: 100%;
   }
 
-  @media ${device.md}{
+  @media ${breakpoints.Tablet}{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+  }
+
+  @media ${breakpoints.Laptop}{
+    margin: auto;
+    padding-bottom: 1rem;
+    width: 100%;
+  };
+
+  @media ${breakpoints.Desktop}{
     margin: auto;
     padding-bottom: 2rem;
     width: 100%;
@@ -44,19 +66,30 @@ const NavLeft = Styled.div`
   width: 40%;
   padding-left: 60px;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     margin: 0;
     padding-left: 5px;
     width: 100%;
   }
 
-  @media ${device.md}{
+  @media ${breakpoints.Tablet}{
+    margin: 0;
+    padding-left: 25px;
+    width: 100%;
+  }
+
+  @media ${breakpoints.Laptop}{
+    margin-left: 15px;
+    padding-left: 0;   
+    width: 100%;
+  }
+
+  @media ${breakpoints.Desktop}{
     margin: 0;
     padding-left: 60px;
     width: 40%;
   }
 `;
-
 
 const NavRight = Styled.div`
   display: flex;
@@ -64,14 +97,22 @@ const NavRight = Styled.div`
   width: 60%;
   justify-content: flex-end;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     margin: 0;
     padding-right: 5px;
     width: 100%;
   }
 
-  @media ${device.md}{
-    /* width: 50%; */
+  @media ${breakpoints.Tablet}{
+    margin: 0;
+    padding-right: 5px;
+    width: 100%;
+  }
+
+  @media ${breakpoints.Laptop}{
+    margin-left: 17px;
+    margin-right: 15px;
+    width: 100%;
   }
 `;
 
@@ -81,12 +122,21 @@ const Title = Styled.h1`
   font-weight: 900;
   margin: 0;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  @media ${breakpoints.Tablet}{
     font-size: 2rem;
     margin-top: 0;
   }
 
-  @media ${device.md}{
+  @media ${breakpoints.Laptop}{
+    font-size: 2rem;
+  }
+
+  @media ${breakpoints.Desktop}{
     font-size: 2rem;
   }
 
@@ -99,17 +149,26 @@ const UnOrderList = Styled.ul`
   display: flex;
   justify-content: "space-between";
   list-style-type: none;
+  margin: 0;
   padding-left: 1rem;
   
-  @media ${device.xs}, ${device.sm}{
+  @media ${breakpoints.Mobile}{
     display: none;
     font-size: 1.4rem;
     padding-right: 7.5px;
     padding-left: 7.5px;
   }
 
-  @media ${device.md}{
-    /* font-size: 2rem;*/
+  @media ${breakpoints.Tablet}{
+    display: none;
+    font-size: 1.4rem;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+
+  @media ${breakpoints.Laptop}{
+    font-size: 1.4rem;
+    padding: 0;
   }
 `;
 
@@ -121,7 +180,7 @@ const ListItem = Styled.li`
   position: relative;
   padding-right: 1rem;
 
-  @media ${device.md}{
+  @media ${breakpoints.Laptop}{
     padding-right: 5px;
   }
 
@@ -160,7 +219,7 @@ const Anchor = Styled.a`
   -webkit-box-align: center;
   text-decoration: none;
 
-  @media ${device.md}{
+  @media ${breakpoints.Laptop}{
     /* font-size: 2rem;
     margin-top: 0;  */
   }
@@ -183,10 +242,12 @@ const Subanchor = Styled.a`
 const UnorderHamburger = Styled.ul`
   display: inline;
   justify-content: "space-between";
+  margin: 0;
   padding-inline-start: 0;
 
-  @media ${device.sm}{
-    margin-top: 1.2rem;
+  @media ${breakpoints.Mobile}{
+    margin: 0;
+    padding:0;
   }
 `;
 
@@ -202,8 +263,16 @@ const ListHamburger = Styled.li`
     color: #f13b3b;
   }
   
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     padding-right: 0;
+  }
+
+  @media ${breakpoints.Tablet}{
+    padding-right: 25px;
+  }
+
+  @media ${breakpoints.Laptop}{
+    padding-right: 2px;
   }
 `;
 

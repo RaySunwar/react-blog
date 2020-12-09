@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import { device } from "./../../mediaQueries";
+import breakpoints from "./../../mediaQueries";
 import Image1 from "./../images/image1.jpg";
 import Image2 from "./../images/image2.jpg";
 import Image3 from "./../images/image3.jpg"; 
@@ -15,9 +15,20 @@ const Wrapper = styled.div`
   margin: 0 64px;
   padding: 0;
 
-  @media ${device.sm}{
-    margin: 0 40px;
+  @media ${breakpoints.Mobile}{
+    margin: 0 10px;
+    max-width: 480px;
+  }
+
+  @media ${breakpoints.Tablet}{
+    margin: 0 30px;
+    max-width: 768px;
     padding: 0 10px;
+  }
+
+  @media ${breakpoints.Laptop}{
+    margin: 0 14px;
+    max-width: 1024px;
   }
 `;
 
@@ -30,7 +41,11 @@ const Subnav = styled.div`
   display: flex;
   width: 100%;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    display: block;
+  }
+
+  @media ${breakpoints.Tablet}{
     display: block;
   }
 `;
@@ -39,7 +54,13 @@ const Sectionleft = styled.div`
   display: block;
   width: 65%;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  } 
+
+  @media ${breakpoints.Tablet}{
     display: block;
     width: 100%;
     margin-left: 0;
@@ -58,7 +79,7 @@ const Title = styled.h1`
   font-size: 3rem;
   text-align: center;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     font-size: 1.7rem;
     padding-top: 0;
   }
@@ -73,7 +94,17 @@ const TitleI = styled.h2`
   margin-bottom: 15px;
   line-height: 120%;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  @media ${breakpoints.Tablet}{
     font-size: 1.7rem;
     line-height: 1;
     margin-top: 8px;
@@ -91,7 +122,7 @@ const TitleII = styled.h3`
   font-weight: 900;
   margin-left: 1.5rem;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     margin: 0 0 1rem 0;
   }
 `;
@@ -110,7 +141,15 @@ const Author = styled.p`
   font-weight: 900;
   margin: 0 0 0 4rem;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media ${breakpoints.Tablet}{
     font-size: 1rem;
     margin-left: 0;
     margin-top: 5px;
@@ -128,7 +167,25 @@ const Article = styled.p`
   margin-left: 4rem;
   padding-bottom: 85px;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    font-size: 1rem;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 12px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media ${breakpoints.Tablet}{
+    font-size: 1rem;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 12px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media ${breakpoints.Laptop}{
     font-size: 1rem;
     justify-content: center;
     margin-left: 0;
@@ -146,7 +203,11 @@ const ArticleI = styled.p`
   max-width: 300px;
   margin-left: 1.5rem;
   
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    margin: 0;
+  }
+
+  @media ${breakpoints.Tablet}{
     margin: 0;
   }
   
@@ -183,9 +244,15 @@ const Anchor = styled.a`
   text-decoration: none;
   padding: 5px 20px 5px 20px;
 
-  @media ${device.sm}{
-    margin-left: 5px;
+  @media ${breakpoints.Mobile}{
+    margin:0;
     margin-top: 0;
+  }
+
+  @media ${breakpoints.Tablet}{
+    margin-left: 0;
+    margin-top: 6px;
+    padding: 5px 15px 5px 15px;
   }
 `;
 
@@ -203,8 +270,8 @@ const Picture = styled.img`
   height: 491px;
   object-fit: cover;
   width: 100%;
-
- @media ${device.sm}{
+  
+ @media ${breakpoints.Mobile}{
   height: auto;
   width: 100%;
   padding-bottom: 8px;
@@ -217,7 +284,12 @@ const Navnewsletter = styled.div`
   padding: 2.5rem;
   max-width: 400px;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    max-width: 768px;
+    padding: 15px;
+  }
+  
+  @media ${breakpoints.Tablet}{
     max-width: 768px;
     padding: 15px;
   }
@@ -228,7 +300,11 @@ const NavTopics = styled.div`
   max-width: 400px;
   padding: 1rem;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    max-width: 768px;
+  }
+
+  @media ${breakpoints.Tablet}{
     max-width: 768px;
   }
 `;
@@ -238,7 +314,13 @@ const SectionRight = styled.div`
   padding-left: 50px;
   width: 35%;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  @media ${breakpoints.Tablet}{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -247,9 +329,16 @@ const SectionRight = styled.div`
 
 const SubnavRight = styled.div`
   padding-bottom: 2.5rem;
-  max-width: 400px;
+  max-width: 764px;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
+    display: block;
+    max-width: 480px;
+    height: auto;
+    width: 100%;
+  }
+
+  @media ${breakpoints.Tablet}{
     display: block;
     max-width: 768px;
     height: auto;
@@ -270,7 +359,7 @@ const Form = styled.form`
   padding: 1rem;
 
   
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     padding: 1rem 0;  
   }
 `;
@@ -300,7 +389,7 @@ const Suscribe = styled.section`
   padding-left: 1rem;
   padding-right: 1rem;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile}{
     padding-left: 0;
     padding-right: 0;
   }
@@ -512,12 +601,13 @@ function LatestArticles(){
             </SubnavRight>
           </SectionRight>
         </Subnav>
+
+        <Nav>
+          <SocialWrapper>
+            <Title>Social Media Follow</Title>
+          </SocialWrapper>
+        </Nav>
       </Wrapper>
-      <Nav>
-        <SocialWrapper>
-          <Title>Social Media Follow</Title>
-        </SocialWrapper>
-      </Nav>
       <Footer/>
     </Fragment>
   );

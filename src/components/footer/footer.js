@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { device } from "./../../mediaQueries";
+import breakpoints from "./../../mediaQueries";
 import { SiFacebook, SiTwitter, SiPinterest } from "react-icons/si";
 
 const Nav = styled.div`
   background-color: #ffffff;
   font-family: "Mulish", sans-serif;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile} {
     margin: 0 40px;
     padding: 0 10px;
   }
@@ -17,8 +17,9 @@ const Subnav = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 5rem;
+  flex-wrap: wrap;
 
-  @media ${device.sm} {
+  @media ${breakpoints.Mobile} {
     display: block;
     margin: 8px;
     width: 100%;
@@ -75,7 +76,7 @@ const Footernav = styled.div`
   margin-bottom: 3rem;
   padding: 0;
 
-  @media ${device.sm}{
+  @media ${breakpoints.Mobile} {
     font-size: 13px;
   }
 `;
@@ -85,11 +86,11 @@ const Footerlink = styled.p`
 `;
 
 const StyledFacebook = styled(SiFacebook)`
-  color: #3e5b98;  
+  color: #3e5b98;
 `;
 
 const StyledTwitter = styled(SiTwitter)`
-  color: #4da7de;  
+  color: #4da7de;
 `;
 
 const StyledPinterest = styled(SiPinterest)`
@@ -97,16 +98,31 @@ const StyledPinterest = styled(SiPinterest)`
 `;
 
 const footer = () => {
-  return(
+  return (
     <Nav>
       <Subnav>
         <Section>
           <Title>React Blog</Title>
-          <Link><Anchor>A multi-concept personal blog and magazine WordPress theme</Anchor>
+          <Link>
+            <Anchor>
+              A multi-concept personal blog and magazine WordPress theme
+            </Anchor>
             <Ulisticon>
-              <Listitem><AnchorI><StyledFacebook /></AnchorI></Listitem>
-              <Listitem><AnchorI><StyledTwitter /></AnchorI></Listitem>
-              <Listitem><AnchorI><StyledPinterest /></AnchorI></Listitem>
+              <Listitem>
+                <AnchorI>
+                  <StyledFacebook />
+                </AnchorI>
+              </Listitem>
+              <Listitem>
+                <AnchorI>
+                  <StyledTwitter />
+                </AnchorI>
+              </Listitem>
+              <Listitem>
+                <AnchorI>
+                  <StyledPinterest />
+                </AnchorI>
+              </Listitem>
             </Ulisticon>
           </Link>
         </Section>
@@ -114,9 +130,15 @@ const footer = () => {
           <Title>Blocks</Title>
           <Link>
             <Unorderlist>
-              <Listitem><Anchor>Common blocks</Anchor></Listitem>
-              <Listitem><Anchor>Formating blocks</Anchor></Listitem>
-              <Listitem><Anchor>Layout blocks</Anchor></Listitem>
+              <Listitem>
+                <Anchor>Common blocks</Anchor>
+              </Listitem>
+              <Listitem>
+                <Anchor>Formating blocks</Anchor>
+              </Listitem>
+              <Listitem>
+                <Anchor>Layout blocks</Anchor>
+              </Listitem>
             </Unorderlist>
           </Link>
         </Section>
@@ -124,9 +146,15 @@ const footer = () => {
           <Title>Features</Title>
           <Link>
             <Unorderlist>
-              <Listitem><Anchor>Shortcodes</Anchor></Listitem>
-              <Listitem><Anchor>Custom Widgets</Anchor></Listitem>
-              <Listitem><Anchor>Contact</Anchor></Listitem>
+              <Listitem>
+                <Anchor>Shortcodes</Anchor>
+              </Listitem>
+              <Listitem>
+                <Anchor>Custom Widgets</Anchor>
+              </Listitem>
+              <Listitem>
+                <Anchor>Contact</Anchor>
+              </Listitem>
             </Unorderlist>
           </Link>
         </Section>
@@ -134,21 +162,27 @@ const footer = () => {
           <Title>What next?</Title>
           <Link>
             <Unorderlist>
-              <Listitem><Anchor>Try it for free</Anchor></Listitem>
-              <Listitem><Anchor>Pre-sale question</Anchor></Listitem>
-              <Listitem><Anchor>Purchase now!</Anchor></Listitem>
+              <Listitem>
+                <Anchor>Try it for free</Anchor>
+              </Listitem>
+              <Listitem>
+                <Anchor>Pre-sale question</Anchor>
+              </Listitem>
+              <Listitem>
+                <Anchor>Purchase now!</Anchor>
+              </Listitem>
             </Unorderlist>
           </Link>
         </Section>
       </Subnav>
-      <hr/>
+      <hr />
       <Footernav>
         <Footerlink>
-          Created by <Anchor href="#">WHA</Anchor> · Copyright 2020 · All rights reserved
+          Created by <Anchor href="#">WHA</Anchor> · Copyright 2020 · All rights
+          reserved
         </Footerlink>
-      </Footernav>  
+      </Footernav>
     </Nav>
   );
 };
-
 export default footer;
