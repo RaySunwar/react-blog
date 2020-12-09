@@ -136,7 +136,7 @@ const Titleii = styled.h3`
 `;
 
 const Author = styled.p`
-  color: #424851;
+  color: #989da2;
   font-size: 1rem;
   font-weight: 900;
   margin: 0 0 0 4rem;
