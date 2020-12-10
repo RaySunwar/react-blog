@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Header from "../header/Header";
 import Featured from "./Featured";
 import LatestArticles from "./LatestArticles";
-import breakpoint from "./../../mediaQueries";
+import breakpoints from "./../../mediaQueries";
 import Image0 from "./../images/image0.jpg";
 
 const Nav = styled.div`
@@ -11,7 +11,7 @@ const Nav = styled.div`
   padding: 0;
   width: 100%;
 
-  @media ${breakpoint.Mobile}, ${breakpoint.Tablet}, ${breakpoint.Laptop}, ${breakpoint.Desktop} {
+  @media ${breakpoints.Mobile}, ${breakpoints.Tablet}, ${breakpoints.Laptop}, ${breakpoints.Desktop} {
     margin: 0;
     width: 100%;      
   }
@@ -22,21 +22,21 @@ const Subnav = styled.div`
   display: flex;
   font-family: "Mulish", sans-serif;
 
-  @media ${breakpoint.Mobile}{
+  @media ${breakpoints.Mobile}{
     display: block;
     font-size: 2rem;
     margin: 0 6px;
     padding: 0 10px;
   }
 
-  @media ${breakpoint.Tablet}{
+  @media ${breakpoints.Tablet}{
     display: block;
     margin: 0 20px;
     padding: 0 10px;
     max-width: 768px;
   }
 
-  @media ${breakpoint.Laptop}{
+  @media ${breakpoints.Laptop}{
     max-width: 1024px;
     margin: 0 14px;
   }
@@ -48,19 +48,19 @@ const NavLeft = styled.div`
   text-align: left;
   max-width: 50%;
 
-  @media ${breakpoint.Mobile}{
+  @media ${breakpoints.Mobile}{
     max-width: 100%;
     padding-right: 0;
     text-align: left;
   };
 
-  @media ${breakpoint.Tablet}{
+  @media ${breakpoints.Tablet}{
     max-width: 100%;
     padding-right: 0;
     text-align: left;
   };
 
-  @media ${breakpoint.Laptop}{
+  @media ${breakpoints.Laptop}{
     max-width: 100%;
     padding-right: 15px;
     text-align: left;
@@ -82,17 +82,17 @@ const NavLeft = styled.div`
     width: 678px;
     z-index: -1;
 
-    @media ${breakpoint.Mobile}{
+    @media ${breakpoints.Mobile}{
       display: none;
     }
 
-    @media ${breakpoint.Tablet}{
+    @media ${breakpoints.Tablet}{
       display: none;
       height: 545px;
       width: 600px;
     }    
 
-    @media ${breakpoint.Laptop}{
+    @media ${breakpoints.Laptop}{
       display: flex;
       height: 558px;
       width: 537px;
@@ -105,19 +105,19 @@ const NavRight = styled.div`
   padding-top: 2.5rem;  
   width: 50%;
 
-  @media ${breakpoint.Mobile}{
+  @media ${breakpoints.Mobile}{
     margin-right: 0;
     padding-top: 0;
     width: 100%;
   }
 
-  @media ${breakpoint.Tablet}{
+  @media ${breakpoints.Tablet}{
     margin-right: 0;
     padding-top: 0;
     width: 100%;
   }
 
-  @media ${breakpoint.Laptop}{
+  @media ${breakpoints.Laptop}{
     margin-right: 0;
     padding-top: 5rem;
   }
@@ -133,7 +133,7 @@ const Title = styled.h1`
   padding-top: 3rem;
   text-align: left;
 
-  @media ${breakpoint.Mobile}{
+  @media ${breakpoints.Mobile}{
     font-size: 1.7rem;
     line-height: 1;
     margin-top: 0;
@@ -142,7 +142,7 @@ const Title = styled.h1`
     justify-content: center;
   }
 
-  @media ${breakpoint.Tablet}{
+  @media ${breakpoints.Tablet}{
     font-size: 35px;
     line-height: 1;
     margin-top: 0;
@@ -151,7 +151,7 @@ const Title = styled.h1`
     justify-content: center;
   }
 
-  @media ${breakpoint.Laptop}{
+  @media ${breakpoints.Laptop}{
     font-size: 1.7rem;
     line-height: 1;
     margin-top: 0;
@@ -168,13 +168,13 @@ const Content = styled.p`
   font-weight: 400;
   margin-top: 0;
 
-  @media ${breakpoint.Mobile}{
+  @media ${breakpoints.Mobile}{
     font-size: 1rem;
     margin-bottom: 0;
     justify-content: center;
   }
 
-  @media ${breakpoint.Tablet}{
+  @media ${breakpoints.Tablet}{
     font-size: 1rem;
     margin-bottom: 0;
     justify-content: center;
@@ -185,11 +185,11 @@ const Button = styled.p`
   box-sizing: inherit;
   margin-top: 0;
 
-  @media ${breakpoint.Mobile}{
+  @media ${breakpoints.Mobile}{
     margin-bottom: 0;
   }
 
-  @media ${breakpoint.Tablet}{
+  @media ${breakpoints.Tablet}{
     margin-top: 10px;
     margin-bottom: 0;
   }
@@ -209,7 +209,7 @@ const Anchor = styled.a`
   text-decoration: none;
   z-index: auto;
 
-  @media ${breakpoint.Mobile}{
+  @media ${breakpoints.Mobile}{
     font-size: 1rem;
     letter-spacing: -1px;
     font-weight: bold;
