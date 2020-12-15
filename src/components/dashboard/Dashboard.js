@@ -229,7 +229,7 @@ const FirstImg = styled.img`
 `;
 
 function Dashboard() {
-  return(
+  return (
     <Fragment>
       <Nav>
         <Header />
@@ -237,7 +237,7 @@ function Dashboard() {
       <Subnav>
         <NavLeft>
           <FirstImg src={Image0} alt="" /> 
-        </NavLeft>
+        </NavLeft>  
         <NavRight>
           <Title>Unleash your creativity</Title>
           <Content>Johannes is a theme carefully designed and developed to get the most out of the new WordPress editor. Unleash the power of blocks - an awesome new way of creating rich content in WordPress!</Content>
