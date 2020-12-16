@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
-import breakpoints from "./../../mediaQueries";
+import breakpoints from "mediaQueries/mediaQueries";
 import { IconContext } from "react-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiArrowDropDownLine } from "react-icons/ri";

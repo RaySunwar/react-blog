@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import breakpoints from "./mediaQueries";
-const { default: Dashboard } = require("./components/dashboard/Dashboard");
+import breakpoints from "mediaQueries/mediaQueries";
+import Dashboard from "components/dashboard/Dashboard";
 
 const MainWrapper = styled.section`
   padding: 0;

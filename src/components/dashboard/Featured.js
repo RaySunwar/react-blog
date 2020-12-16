@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Styled from "styled-components";
-import breakpoints from "./../../mediaQueries";
+import breakpoints from "mediaQueries/mediaQueries";
 
 const Wrapper = Styled.div`
   width: 100%;

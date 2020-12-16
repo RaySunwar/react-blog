@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import breakpoints from "./../../mediaQueries";
+import breakpoints from "../../mediaQueries/mediaQueries";
 import { SiFacebook, SiTwitter, SiPinterest } from "react-icons/si";
 
 const Nav = styled.div`

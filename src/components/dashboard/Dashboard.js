@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Header from "../header/Header";
 import Featured from "./Featured";
 import LatestArticles from "./LatestArticles";
-import breakpoints from "./../../mediaQueries";
-import Image0 from "./../images/image0.jpg";
+import breakpoints from "mediaQueries/mediaQueries";
+import { Image0 }from "components/images";
 
 const Nav = styled.div`
   background-color: #ffffff;
